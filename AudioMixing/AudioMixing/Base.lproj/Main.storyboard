@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="Tracks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnU-Cs-Ta7">
+                                <rect key="frame" x="103.5" y="431" width="207" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Mix Songs">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playTracks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OKe-Pu-ppH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4w0-64-D11">
+                                <rect key="frame" x="41.5" y="336" width="331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljc-bj-so9">
+                                <rect key="frame" x="41.5" y="307" width="331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZF-QV-T4l">
+                                <rect key="frame" x="41.5" y="377" width="331" height="34"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mixingDurationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xkW-PE-p0Z"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKw-Eo-gXN">
+                                <rect key="frame" x="0.0" y="626" width="414" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yZF-QV-T4l" firstAttribute="trailing" secondItem="4w0-64-D11" secondAttribute="trailing" id="1pq-aA-PSg"/>
+                            <constraint firstItem="LKw-Eo-gXN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Sc-9A-TVE"/>
+                            <constraint firstItem="yZF-QV-T4l" firstAttribute="leading" secondItem="4w0-64-D11" secondAttribute="leading" id="6W9-hu-p2t"/>
+                            <constraint firstItem="yZF-QV-T4l" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="7U6-10-qDG"/>
+                            <constraint firstItem="PnU-Cs-Ta7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BTi-6L-SeA"/>
+                            <constraint firstItem="4w0-64-D11" firstAttribute="leading" secondItem="Ljc-bj-so9" secondAttribute="leading" id="HsU-lX-GDh"/>
+                            <constraint firstItem="PnU-Cs-Ta7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="Vs6-kP-gxI"/>
+                            <constraint firstAttribute="trailing" secondItem="LKw-Eo-gXN" secondAttribute="trailing" id="b76-q3-5RG"/>
+                            <constraint firstItem="yZF-QV-T4l" firstAttribute="top" secondItem="4w0-64-D11" secondAttribute="bottom" constant="20" id="bS4-K9-4AK"/>
+                            <constraint firstItem="PnU-Cs-Ta7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bzZ-sL-g71"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LKw-Eo-gXN" secondAttribute="bottom" constant="20" id="mh5-bV-yce"/>
+                            <constraint firstItem="PnU-Cs-Ta7" firstAttribute="top" secondItem="yZF-QV-T4l" secondAttribute="bottom" constant="20" id="oyu-iP-QxH"/>
+                            <constraint firstItem="4w0-64-D11" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rsx-Ac-gNj"/>
+                            <constraint firstItem="yZF-QV-T4l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rxI-OU-Qtz"/>
+                            <constraint firstItem="4w0-64-D11" firstAttribute="top" secondItem="Ljc-bj-so9" secondAttribute="bottom" constant="8" id="tDs-ds-mIg"/>
+                            <constraint firstItem="4w0-64-D11" firstAttribute="trailing" secondItem="Ljc-bj-so9" secondAttribute="trailing" id="xQ1-jA-kqI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mixingDuration" destination="yZF-QV-T4l" id="VuQ-SO-Zzy"/>
+                        <outlet property="pickerView" destination="LKw-Eo-gXN" id="R0g-Zw-E0g"/>
+                        <outlet property="playButton" destination="PnU-Cs-Ta7" id="PCT-8c-qC7"/>
+                        <outletCollection property="trackLabel" destination="Ljc-bj-so9" collectionClass="NSMutableArray" id="TlH-eP-v6x"/>
+                        <outletCollection property="trackLabel" destination="4w0-64-D11" collectionClass="NSMutableArray" id="MkE-ub-lMz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175" y="76"/>
+        </scene>
+    </scenes>
+</document>

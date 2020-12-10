@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>True</string>
+		<key>filename</key>
+		<string>true</string>
+		<key>type</key>
+		<string>mp3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Anna&apos;s Logbook</string>
+		<key>filename</key>
+		<string>Anna-Logbook</string>
+		<key>type</key>
+		<string>mp3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kashmere</string>
+		<key>filename</key>
+		<string>111_Kashmere</string>
+		<key>type</key>
+		<string>mp3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Conga Funk</string>
+		<key>filename</key>
+		<string>111_conga_funk</string>
+		<key>type</key>
+		<string>mp3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Take Step</string>
+		<key>filename</key>
+		<string>170_tekstep_flat</string>
+		<key>type</key>
+		<string>mp3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hot Breaker</string>
+		<key>filename</key>
+		<string>111_hot-breaker</string>
+		<key>type</key>
+		<string>mp3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Terror Steper</string>
+		<key>filename</key>
+		<string>170_terror-stepper</string>
+		<key>type</key>
+		<string>mp3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dinky Break</string>
+		<key>filename</key>
+		<string>161_dinkybrk</string>
+		<key>type</key>
+		<string>mp3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Got Cut Up All Over</string>
+		<key>filename</key>
+		<string>111_got_cut-up-all-over</string>
+		<key>type</key>
+		<string>mp3</string>
+	</dict>
+</array>
+</plist>
