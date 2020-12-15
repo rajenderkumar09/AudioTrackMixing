@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A0A851D2588A90700997FA6 /* Clarinet_Mood_Loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9A0A851C2588A90600997FA6 /* Clarinet_Mood_Loop.wav */; };
+		9A0A851F2588A99E00997FA6 /* Flute_Mood_Loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9A0A851E2588A99E00997FA6 /* Flute_Mood_Loop.wav */; };
+		9A0A85242588AE4600997FA6 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0A85222588AE4600997FA6 /* AudioViewController.swift */; };
+		9A0A85252588AE4600997FA6 /* AudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A0A85232588AE4600997FA6 /* AudioViewController.xib */; };
+		9A3856622581EE5D006A4A6B /* HarrisLilliburlero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A38565F2581EE5C006A4A6B /* HarrisLilliburlero.mp3 */; };
+		9A3856632581EE5D006A4A6B /* PurcellSongMus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A3856602581EE5D006A4A6B /* PurcellSongMus.mp3 */; };
+		9A3856642581EE5D006A4A6B /* BachGavotte.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A3856612581EE5D006A4A6B /* BachGavotte.mp3 */; };
 		9AD37FA32581E4FC00A64FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD37FA22581E4FC00A64FCB /* AppDelegate.swift */; };
 		9AD37FA52581E4FC00A64FCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD37FA42581E4FC00A64FCB /* SceneDelegate.swift */; };
 		9AD37FAA2581E4FC00A64FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD37FA82581E4FC00A64FCB /* Main.storyboard */; };
@@ -48,6 +55,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A0A851C2588A90600997FA6 /* Clarinet_Mood_Loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Clarinet_Mood_Loop.wav; sourceTree = "<group>"; };
+		9A0A851E2588A99E00997FA6 /* Flute_Mood_Loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Flute_Mood_Loop.wav; sourceTree = "<group>"; };
+		9A0A85222588AE4600997FA6 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		9A0A85232588AE4600997FA6 /* AudioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioViewController.xib; sourceTree = "<group>"; };
+		9A38565F2581EE5C006A4A6B /* HarrisLilliburlero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HarrisLilliburlero.mp3; sourceTree = "<group>"; };
+		9A3856602581EE5D006A4A6B /* PurcellSongMus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PurcellSongMus.mp3; sourceTree = "<group>"; };
+		9A3856612581EE5D006A4A6B /* BachGavotte.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BachGavotte.mp3; sourceTree = "<group>"; };
 		9AD37F9F2581E4FC00A64FCB /* AudioMixing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioMixing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD37FA22581E4FC00A64FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD37FA42581E4FC00A64FCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,9 +143,11 @@
 				9AD37FD42581E5AB00A64FCB /* Model */,
 				9AD37FD32581E5AB00A64FCB /* CrossFadePlayer.swift */,
 				9AD37FD22581E5AB00A64FCB /* Looper.swift */,
-				9AD37FD62581E5AB00A64FCB /* RootViewController.swift */,
 				9AD37FA22581E4FC00A64FCB /* AppDelegate.swift */,
 				9AD37FA42581E4FC00A64FCB /* SceneDelegate.swift */,
+				9AD37FD62581E5AB00A64FCB /* RootViewController.swift */,
+				9A0A85222588AE4600997FA6 /* AudioViewController.swift */,
+				9A0A85232588AE4600997FA6 /* AudioViewController.xib */,
 				9AD37FA82581E4FC00A64FCB /* Main.storyboard */,
 				9AD37FAB2581E4FD00A64FCB /* Assets.xcassets */,
 				9AD37FAD2581E4FD00A64FCB /* LaunchScreen.storyboard */,
@@ -170,6 +186,11 @@
 			isa = PBXGroup;
 			children = (
 				9AD37FDC2581E5B900A64FCB /* Tracks.plist */,
+				9A0A851C2588A90600997FA6 /* Clarinet_Mood_Loop.wav */,
+				9A0A851E2588A99E00997FA6 /* Flute_Mood_Loop.wav */,
+				9A3856612581EE5D006A4A6B /* BachGavotte.mp3 */,
+				9A38565F2581EE5C006A4A6B /* HarrisLilliburlero.mp3 */,
+				9A3856602581EE5D006A4A6B /* PurcellSongMus.mp3 */,
 				9AD37FDD2581E5B900A64FCB /* 161_dinkybrk.mp3 */,
 				9AD37FDE2581E5B900A64FCB /* Anna-Logbook.mp3 */,
 				9AD37FDF2581E5B900A64FCB /* 111_conga_funk.mp3 */,
@@ -292,9 +313,15 @@
 				9AD37FEA2581E5B900A64FCB /* 170_terror-stepper.mp3 in Resources */,
 				9AD37FAF2581E4FD00A64FCB /* LaunchScreen.storyboard in Resources */,
 				9AD37FEC2581E5B900A64FCB /* 111_got-cut-up-all-over.mp3 in Resources */,
+				9A3856642581EE5D006A4A6B /* BachGavotte.mp3 in Resources */,
+				9A0A851F2588A99E00997FA6 /* Flute_Mood_Loop.wav in Resources */,
+				9A0A851D2588A90700997FA6 /* Clarinet_Mood_Loop.wav in Resources */,
+				9A0A85252588AE4600997FA6 /* AudioViewController.xib in Resources */,
 				9AD37FED2581E5B900A64FCB /* true.mp3 in Resources */,
 				9AD37FE72581E5B900A64FCB /* 161_dinkybrk.mp3 in Resources */,
 				9AD37FAC2581E4FD00A64FCB /* Assets.xcassets in Resources */,
+				9A3856622581EE5D006A4A6B /* HarrisLilliburlero.mp3 in Resources */,
+				9A3856632581EE5D006A4A6B /* PurcellSongMus.mp3 in Resources */,
 				9AD37FE62581E5B900A64FCB /* Tracks.plist in Resources */,
 				9AD37FEE2581E5B900A64FCB /* 111_Kashmere.mp3 in Resources */,
 				9AD37FE82581E5B900A64FCB /* Anna-Logbook.mp3 in Resources */,
@@ -329,6 +356,7 @@
 				9AD37FDA2581E5AB00A64FCB /* RootViewController.swift in Sources */,
 				9AD37FA52581E4FC00A64FCB /* SceneDelegate.swift in Sources */,
 				9AD37FD72581E5AB00A64FCB /* Looper.swift in Sources */,
+				9A0A85242588AE4600997FA6 /* AudioViewController.swift in Sources */,
 				9AD37FD82581E5AB00A64FCB /* CrossFadePlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

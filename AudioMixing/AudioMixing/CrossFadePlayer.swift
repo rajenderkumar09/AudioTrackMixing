@@ -76,10 +76,10 @@ class CrossFadePlayer: NSObject {
     /// Add periodic time observer for current player.
     fileprivate func addPeriodicTimeObserver(for player: AVPlayer) {
         self.timeObserverToken = self.currentPlayer.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(1, preferredTimescale: CMTimeScale(NSEC_PER_SEC)), queue: .main) { [weak self] (currentTime) in
+			print(currentTime)
 
             if let currentItem = self?.currentPlayer.currentItem, currentItem.status == .readyToPlay, let crossFadeDuration = self?.crossFadeDuration {
                 let totalDuration = currentItem.asset.duration
-				print(totalDuration)
 
                 /**
                     Logic for Looping
@@ -102,7 +102,7 @@ class CrossFadePlayer: NSObject {
         self.removePeriodicTimeObserver(for: self.currentPlayer)
 
         // Invert current player
-       if self.index < playerQueue.count {
+       if self.index < playerQueue.count-1 {
 			self.index += 1
 		} else {
 			print("Reached to End of Queue, Looping to start")

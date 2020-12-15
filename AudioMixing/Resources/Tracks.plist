@@ -4,6 +4,46 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Clarinet Mood Loop</string>
+		<key>filename</key>
+		<string>Clarinet_Mood_Loop</string>
+		<key>type</key>
+		<string>wav</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Flute Mood Loop</string>
+		<key>filename</key>
+		<string>Flute_Mood_Loop</string>
+		<key>type</key>
+		<string>wav</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Purcell Song Mus</string>
+		<key>filename</key>
+		<string>PurcellSongMus</string>
+		<key>type</key>
+		<string>mp3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bach Gavotte</string>
+		<key>filename</key>
+		<string>BachGavotte</string>
+		<key>type</key>
+		<string>mp3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Harris Lilli burlero</string>
+		<key>filename</key>
+		<string>HarrisLilliburlero</string>
+		<key>type</key>
+		<string>mp3</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>True</string>
 		<key>filename</key>
 		<string>true</string>
@@ -28,17 +68,17 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Conga Funk</string>
+		<string>Take Step</string>
 		<key>filename</key>
-		<string>111_conga_funk</string>
+		<string>170_tekstep_flat</string>
 		<key>type</key>
 		<string>mp3</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Take Step</string>
+		<string>Got Cut Up All Over</string>
 		<key>filename</key>
-		<string>170_tekstep_flat</string>
+		<string>111_got_cut-up-all-over</string>
 		<key>type</key>
 		<string>mp3</string>
 	</dict>
@@ -60,17 +100,17 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Dinky Break</string>
+		<string>Conga Funk</string>
 		<key>filename</key>
-		<string>161_dinkybrk</string>
+		<string>111_conga_funk</string>
 		<key>type</key>
 		<string>mp3</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Got Cut Up All Over</string>
+		<string>Dinky Break</string>
 		<key>filename</key>
-		<string>111_got_cut-up-all-over</string>
+		<string>161_dinkybrk</string>
 		<key>type</key>
 		<string>mp3</string>
 	</dict>

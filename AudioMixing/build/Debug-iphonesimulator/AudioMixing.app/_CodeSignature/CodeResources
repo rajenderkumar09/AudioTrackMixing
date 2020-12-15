@@ -36,9 +36,17 @@
 		<data>
 		x8kc0CRisV17VzRwRbLUanH9y6Y=
 		</data>
+		<key>AudioViewController.nib</key>
+		<data>
+		2LtvcoN1XIE5vzsKVtrQ6sbxryg=
+		</data>
+		<key>BachGavotte.mp3</key>
+		<data>
+		AfW9gDHvwRu1NKJzZYWLngKm6A0=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		N2qwNhJ7mEvkCd1BN8fA7Mkh1Zg=
+		8akCSl8v+VBfXZIZ5782kUS+1qo=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -46,19 +54,31 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		LJ6Ic6e+xE6WW+bOWCRECVvHpxc=
+		Rr33jOuJSDDiQIbSjDg28z0KfW8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		mZ1XAfMKhQ5RXqLWvdWeiEuHl9I=
+		H8XdsweP80hW8NVsTJNLr1fHnRY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		MDrKFvFWroTb0+KEbQShBcoBvo4=
+		WoWTs5ipMv0niwt4W98o6pTJDHM=
 		</data>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
+		<key>Base.lproj/Main.storyboardc/UINavigationController-JpI-H2-7c2.nib</key>
 		<data>
-		Kf8MmevNC4PP8R+x8h+5vz6tDEw=
+		n1AUtS6rHeUTLVnpGC90qa7/TP4=
+		</data>
+		<key>Clarinet_Mood_Loop.wav</key>
+		<data>
+		B3NDlTjWc6HktTvpcHXtDIFXNKk=
+		</data>
+		<key>Flute_Mood_Loop.wav</key>
+		<data>
+		t7vauHmFQ0avQpeoO6O+E0nDqzg=
+		</data>
+		<key>HarrisLilliburlero.mp3</key>
+		<data>
+		AkNEmaJGdwQ4doNkEu/E1aHqc0E=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -68,9 +88,13 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>PurcellSongMus.mp3</key>
+		<data>
+		0eelSol0qkLiei6CauVDiVMQbp4=
+		</data>
 		<key>Tracks.plist</key>
 		<data>
-		Acb9I22dEReTbC4/t3o69Pv/JJ8=
+		DoqN2PEjAlc2ku/p9Y3bdO8M5OU=
 		</data>
 		<key>true.mp3</key>
 		<data>
@@ -135,11 +159,25 @@
 			0eOkhho+mGKzmfk00ELv44z6jb18wUwigu3yofqYBxc=
 			</data>
 		</dict>
+		<key>AudioViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G42of9Lf033v6U98n5ARtjQsOoCcFCnHzRNsZehPb/A=
+			</data>
+		</dict>
+		<key>BachGavotte.mp3</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5P6g94nP5Qv7svKjrnAsdN6EDSs9DwgYzXQJPVySYDA=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7qSZYpBwh2ehWKjfLxMWKVQgaKi+VaSeMSS6SHpBRy0=
+			Jr1RE6GrkfbqpmiLnHviport0vrjijzCOxJWK5iyNNs=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -153,35 +191,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hMGmOP5QDSpMF2UiMtdonSp+Z3IvH13cWfKedS/BVdA=
+			3Q9SIc+3oZqEpcWISczLyneE03W0yF+7Hir+/dCYVuE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G/1eCHtcWojJZ6l6TXpTwd3oNeV9/pxubRpQfDablEs=
+			j3Gj2Z7sB+/U7Gv8SfMkse2Qx4QWldzKwEh05gJCu+w=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PpvapAjR62rl6Ym4E6hkTgpKmBICxTaQXeUqcpHmmqQ=
+			eZ1/0pbyh2fFQ8VQx7BZXBQG1yAtEWer9uzTXZ8u9vQ=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
+		<key>Base.lproj/Main.storyboardc/UINavigationController-JpI-H2-7c2.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CfaDGalssKR/mQZScUCH2Xn81dEUAeabHS24kmxvTrY=
+			appvcwQBF2cK2K37PKJopigdeD2DTHbZhzD7jRv9xDw=
+			</data>
+		</dict>
+		<key>Clarinet_Mood_Loop.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			y8+IW4uflqHQBalrlsvdZanYlqEhJ18NxldDvSW70gM=
+			</data>
+		</dict>
+		<key>Flute_Mood_Loop.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BMC+HOtmUpv/niZiNWGiSjSLSLIat+t+8Q3wzZ19XYI=
+			</data>
+		</dict>
+		<key>HarrisLilliburlero.mp3</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LurbrXWHB0F5TiTuivH43BY1ARs6WH1WsofOCAeJefY=
+			</data>
+		</dict>
+		<key>PurcellSongMus.mp3</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sXY+OVtWG7mG82CWKZWJW9P83jGTlcULdETE54lFxK8=
 			</data>
 		</dict>
 		<key>Tracks.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tTmkcPx/xPqwePVLYKlf6NTipOufsZY/cvEdZyawDi0=
+			mgFo/Qxm0ABQ2d0goJaXHweEaJtKi2L3gPE2rUyWe2Y=
 			</data>
 		</dict>
 		<key>true.mp3</key>

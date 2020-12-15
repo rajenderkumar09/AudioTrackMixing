@@ -21,14 +21,14 @@ class RootViewController: UIViewController {
 	/**
 		Default Duration for Mixing
 	*/
-	var duration:Int = 10
+	var duration:Int = 5
 
 	/**
 		Generate array of Int for duration options
 	*/
 	lazy var durations:[Int] = {
 		var values = [Int]()
-		for i in 0...100 {
+		for i in 1...20 {
 			values.append(i)
 		}
 		return values
@@ -107,6 +107,23 @@ class RootViewController: UIViewController {
 		}
 	}
 
+	/**
+	 UIButton Outlet for connecting AudioEngineViewController Screen
+	*/
+	@IBOutlet weak var audioEngineButton: UIButton! {
+		/**
+			Configure Engine Button UI
+		*/
+		didSet {
+			audioEngineButton.layer.cornerRadius = 8.0
+			audioEngineButton.layer.borderColor = UIColor.black.cgColor
+			audioEngineButton.layer.borderWidth = 0.5
+
+			audioEngineButton.setTitle("Engine", for: .normal)
+			audioEngineButton.setTitleColor(.black, for: .normal)
+		}
+	}
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
@@ -117,6 +134,7 @@ class RootViewController: UIViewController {
 		Method: configure view and set UI objects to default settings/options
 	*/
 	private func configureView() {
+		self.title = "Audio Cross Fit"
 		trackLabel.enumerated().forEach { (index, label) in
 			let track = self.tracks[index]
 			label.text = "Track \(index + 1): " + track.name
@@ -135,7 +153,7 @@ class RootViewController: UIViewController {
 		Play button action
 	*/
 	@IBAction func playTracks(_ sender: UIButton) {
-		self.looper = Looper(queue: Array(tracks.prefix(2)), fadeDuration: Double(duration))
+		self.looper = Looper(queue: Array(tracks.prefix(4)), fadeDuration: Double(duration))
 		/*
 		let track = self.tracks[0]
 		let path = Bundle.main.path(forResource: track.fileName, ofType:track.type)!
@@ -151,6 +169,16 @@ class RootViewController: UIViewController {
 			print("Error: \(error)")
 		}
 		*/
+	}
+
+	/**
+		AudioEngineButton Action
+	*/
+	@IBAction func audioEngineAction(_ sender: UIButton) {
+		let audioEngineVC = AudioViewController(nibName: "AudioViewController", bundle: nil)
+		audioEngineVC.tracks = self.tracks
+		audioEngineVC.duration = self.duration
+		self.navigationController?.pushViewController(audioEngineVC, animated: true)
 	}
 }
 

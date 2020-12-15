@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JpI-H2-7c2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,13 +10,13 @@
         <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="Tracks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="AudioMixing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnU-Cs-Ta7">
-                                <rect key="frame" x="103.5" y="431" width="207" height="34"/>
+                                <rect key="frame" x="223.5" y="431" width="149" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Mix Songs">
                                     <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,20 +49,33 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKw-Eo-gXN">
                                 <rect key="frame" x="0.0" y="626" width="414" height="216"/>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUH-sY-YMO">
+                                <rect key="frame" x="41.5" y="431" width="170" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Audio Engine">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="audioEngineAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mc8-7b-mgU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="PnU-Cs-Ta7" firstAttribute="trailing" secondItem="yZF-QV-T4l" secondAttribute="trailing" id="0mf-eP-PZ1"/>
                             <constraint firstItem="yZF-QV-T4l" firstAttribute="trailing" secondItem="4w0-64-D11" secondAttribute="trailing" id="1pq-aA-PSg"/>
                             <constraint firstItem="LKw-Eo-gXN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Sc-9A-TVE"/>
                             <constraint firstItem="yZF-QV-T4l" firstAttribute="leading" secondItem="4w0-64-D11" secondAttribute="leading" id="6W9-hu-p2t"/>
                             <constraint firstItem="yZF-QV-T4l" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="7U6-10-qDG"/>
-                            <constraint firstItem="PnU-Cs-Ta7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BTi-6L-SeA"/>
                             <constraint firstItem="4w0-64-D11" firstAttribute="leading" secondItem="Ljc-bj-so9" secondAttribute="leading" id="HsU-lX-GDh"/>
-                            <constraint firstItem="PnU-Cs-Ta7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="Vs6-kP-gxI"/>
+                            <constraint firstItem="PnU-Cs-Ta7" firstAttribute="width" secondItem="BUH-sY-YMO" secondAttribute="width" multiplier="0.878505" id="Jqn-Az-KSw"/>
                             <constraint firstAttribute="trailing" secondItem="LKw-Eo-gXN" secondAttribute="trailing" id="b76-q3-5RG"/>
                             <constraint firstItem="yZF-QV-T4l" firstAttribute="top" secondItem="4w0-64-D11" secondAttribute="bottom" constant="20" id="bS4-K9-4AK"/>
                             <constraint firstItem="PnU-Cs-Ta7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bzZ-sL-g71"/>
+                            <constraint firstItem="BUH-sY-YMO" firstAttribute="leading" secondItem="yZF-QV-T4l" secondAttribute="leading" id="hVg-Zr-CJP"/>
+                            <constraint firstItem="PnU-Cs-Ta7" firstAttribute="leading" secondItem="BUH-sY-YMO" secondAttribute="trailing" constant="12" id="ht5-W7-tBC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LKw-Eo-gXN" secondAttribute="bottom" constant="20" id="mh5-bV-yce"/>
+                            <constraint firstItem="BUH-sY-YMO" firstAttribute="top" secondItem="PnU-Cs-Ta7" secondAttribute="top" id="mo7-Zg-HGZ"/>
                             <constraint firstItem="PnU-Cs-Ta7" firstAttribute="top" secondItem="yZF-QV-T4l" secondAttribute="bottom" constant="20" id="oyu-iP-QxH"/>
                             <constraint firstItem="4w0-64-D11" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rsx-Ac-gNj"/>
                             <constraint firstItem="yZF-QV-T4l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rxI-OU-Qtz"/>
@@ -71,7 +84,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="76Q-xX-Vix"/>
                     <connections>
+                        <outlet property="audioEngineButton" destination="BUH-sY-YMO" id="gJp-P7-980"/>
                         <outlet property="mixingDuration" destination="yZF-QV-T4l" id="VuQ-SO-Zzy"/>
                         <outlet property="pickerView" destination="LKw-Eo-gXN" id="R0g-Zw-E0g"/>
                         <outlet property="playButton" destination="PnU-Cs-Ta7" id="PCT-8c-qC7"/>
@@ -81,7 +96,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-175" y="76"/>
+            <point key="canvasLocation" x="734.78260869565224" y="75.669642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pOH-pt-WqZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JpI-H2-7c2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zbm-SE-ZAv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Vfq-ZG-zyz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9zL-P0-8Sa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175.36231884057972" y="75.669642857142847"/>
         </scene>
     </scenes>
 </document>

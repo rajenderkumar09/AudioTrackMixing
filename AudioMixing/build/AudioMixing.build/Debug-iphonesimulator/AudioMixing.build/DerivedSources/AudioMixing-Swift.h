@@ -221,6 +221,16 @@ SWIFT_CLASS("_TtC11AudioMixing11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC11AudioMixing19AudioViewController")
+@interface AudioViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC11AudioMixing15CrossFadePlayer")
 @interface CrossFadePlayer : NSObject
@@ -244,8 +254,6 @@ SWIFT_CLASS("_TtC11AudioMixing6Looper")
 @class UIPickerView;
 @class UILabel;
 @class UIButton;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC11AudioMixing18RootViewController")
 @interface RootViewController : UIViewController
@@ -258,11 +266,15 @@ SWIFT_CLASS("_TtC11AudioMixing18RootViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified mixingDuration;
 /// UIButton Outlet for playing selected tracks
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified playButton;
+/// UIButton Outlet for connecting AudioEngineViewController Screen
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified audioEngineButton;
 - (void)viewDidLoad;
 /// Mixing Duration button action
 - (IBAction)mixingDurationAction:(UIButton * _Nonnull)sender;
 /// Play button action
 - (IBAction)playTracks:(UIButton * _Nonnull)sender;
+/// AudioEngineButton Action
+- (IBAction)audioEngineAction:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

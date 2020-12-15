@@ -1,10 +1,11 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-options: "4bb782488d2aeeb36d512a5240ceed29"
-build_time: [1607577131, 592581000]
+options: "3bd073371ba5c90089412069821496fd"
+build_time: [1608023300, 217384000]
 inputs:
-  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioTrackMixing/AudioMixing/AudioMixing/AppDelegate.swift": [1607576956, 681138785]
-  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioTrackMixing/AudioMixing/AudioMixing/Model/Track.swift": [9223372036, 854775807]
-  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioTrackMixing/AudioMixing/AudioMixing/RootViewController.swift": [9223372036, 854775807]
-  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioTrackMixing/AudioMixing/AudioMixing/SceneDelegate.swift": [1607576956, 690319405]
-  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioTrackMixing/AudioMixing/AudioMixing/Looper.swift": [9223372036, 854775807]
-  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioTrackMixing/AudioMixing/AudioMixing/CrossFadePlayer.swift": [9223372036, 854775807]
+  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/AppDelegate.swift": [1607580154, 459690333]
+  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/Model/Track.swift": [1607434788, 246383667]
+  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/RootViewController.swift": [1608023098, 462162282]
+  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/SceneDelegate.swift": [1607576956, 690319419]
+  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/Looper.swift": [1607448191, 287376523]
+  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/AudioViewController.swift": [1608023136, 290016903]
+  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/CrossFadePlayer.swift": [1607579794, 530195806]
