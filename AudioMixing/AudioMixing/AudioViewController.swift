@@ -16,7 +16,6 @@ class AudioViewController: UIViewController {
 	let speedControl = AVAudioUnitVarispeed()
 	let pitchControl = AVAudioUnitTimePitch()
 
-
 	/**
 		Default Duration for Mixing
 	*/

@@ -12,6 +12,8 @@ import AVFoundation
 
 class RootViewController: UIViewController {
 
+	var audioEngine: AudioPlayer!
+	
 	var looper:Looper!
 	/**
 		Audio Player object for playing tracks
@@ -175,10 +177,21 @@ class RootViewController: UIViewController {
 		AudioEngineButton Action
 	*/
 	@IBAction func audioEngineAction(_ sender: UIButton) {
+		// Setup and start main player
+		let urls = self.tracks.prefix(4).map { (track) -> URL in
+			guard let path = Bundle.main.path(forResource: track.fileName, ofType: track.type), let trackURL:URL = URL(fileURLWithPath: path) as? URL else {
+				return URL(string: "")!
+			}
+			return trackURL
+		}
+		self.audioEngine = AudioPlayer(urls)
+		self.audioEngine.start()
+		/*
 		let audioEngineVC = AudioViewController(nibName: "AudioViewController", bundle: nil)
 		audioEngineVC.tracks = self.tracks
 		audioEngineVC.duration = self.duration
 		self.navigationController?.pushViewController(audioEngineVC, animated: true)
+		*/
 	}
 }
 

@@ -14,6 +14,7 @@
 		9A3856622581EE5D006A4A6B /* HarrisLilliburlero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A38565F2581EE5C006A4A6B /* HarrisLilliburlero.mp3 */; };
 		9A3856632581EE5D006A4A6B /* PurcellSongMus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A3856602581EE5D006A4A6B /* PurcellSongMus.mp3 */; };
 		9A3856642581EE5D006A4A6B /* BachGavotte.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A3856612581EE5D006A4A6B /* BachGavotte.mp3 */; };
+		9A617092258B3C6C005688A2 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A617091258B3C6C005688A2 /* AudioPlayer.swift */; };
 		9AD37FA32581E4FC00A64FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD37FA22581E4FC00A64FCB /* AppDelegate.swift */; };
 		9AD37FA52581E4FC00A64FCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD37FA42581E4FC00A64FCB /* SceneDelegate.swift */; };
 		9AD37FAA2581E4FC00A64FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD37FA82581E4FC00A64FCB /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		9A38565F2581EE5C006A4A6B /* HarrisLilliburlero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HarrisLilliburlero.mp3; sourceTree = "<group>"; };
 		9A3856602581EE5D006A4A6B /* PurcellSongMus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PurcellSongMus.mp3; sourceTree = "<group>"; };
 		9A3856612581EE5D006A4A6B /* BachGavotte.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BachGavotte.mp3; sourceTree = "<group>"; };
+		9A617091258B3C6C005688A2 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		9AD37F9F2581E4FC00A64FCB /* AudioMixing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioMixing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD37FA22581E4FC00A64FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD37FA42581E4FC00A64FCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				9AD37FD42581E5AB00A64FCB /* Model */,
 				9AD37FD32581E5AB00A64FCB /* CrossFadePlayer.swift */,
+				9A617091258B3C6C005688A2 /* AudioPlayer.swift */,
 				9AD37FD22581E5AB00A64FCB /* Looper.swift */,
 				9AD37FA22581E4FC00A64FCB /* AppDelegate.swift */,
 				9AD37FA42581E4FC00A64FCB /* SceneDelegate.swift */,
@@ -354,6 +357,7 @@
 				9AD37FA32581E4FC00A64FCB /* AppDelegate.swift in Sources */,
 				9AD37FD92581E5AB00A64FCB /* Track.swift in Sources */,
 				9AD37FDA2581E5AB00A64FCB /* RootViewController.swift in Sources */,
+				9A617092258B3C6C005688A2 /* AudioPlayer.swift in Sources */,
 				9AD37FA52581E4FC00A64FCB /* SceneDelegate.swift in Sources */,
 				9AD37FD72581E5AB00A64FCB /* Looper.swift in Sources */,
 				9A0A85242588AE4600997FA6 /* AudioViewController.swift in Sources */,

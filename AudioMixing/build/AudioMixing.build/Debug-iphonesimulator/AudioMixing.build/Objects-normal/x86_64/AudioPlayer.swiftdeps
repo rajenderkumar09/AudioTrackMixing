@@ -1,0 +1,603 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AudioPlayer"
+provides-nominal:
+- "11AudioMixing0A6PlayerC"
+provides-member:
+- ["11AudioMixing0A6PlayerC", ""]
+- ["So11AVAudioFileC", ""]
+- ["So11AVAudioFileC", "duration"]
+provides-dynamic-lookup:
+- "audioFile"
+- "currentFile"
+- "currentPlayer"
+- "duration"
+- "engine"
+- "index"
+- "mixer"
+- "playerNodes"
+- "removeObserver"
+- "session"
+- "setupPlayer"
+- "start"
+- "startObserver"
+- "timer"
+depends-top-level:
+- !private "*"
+- !private "+="
+- !private "-"
+- !private "/"
+- !private ">"
+- !private ">="
+- "AVAudioEngine"
+- "AVAudioFile"
+- !private "AVAudioFrameCount"
+- "AVAudioMixerNode"
+- "AVAudioPlayerNode"
+- "AVAudioSession"
+- "AssignmentPrecedence"
+- "AudioPlayer"
+- !private "BooleanLiteralType"
+- !private "Double"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- !private "StringLiteralType"
+- "TimeInterval"
+- "Timer"
+- "URL"
+- !private "print"
+depends-member:
+- !private ["So15AVAudio3DMixingP", "init"]
+- !private ["So15AVAudio3DMixingP", "lastRenderTime"]
+- !private ["So15AVAudio3DMixingP", "play"]
+- !private ["So15AVAudio3DMixingP", "playerTime"]
+- !private ["So15AVAudio3DMixingP", "scheduleFile"]
+- !private ["So13AVAudioEngineC", "attach"]
+- !private ["So13AVAudioEngineC", "connect"]
+- !private ["So13AVAudioEngineC", "init"]
+- !private ["So13AVAudioEngineC", "outputNode"]
+- !private ["So13AVAudioEngineC", "start"]
+- !private ["So11AVAudioFileC", "Double"]
+- ["So11AVAudioFileC", "TimeInterval"]
+- ["So11AVAudioFileC", "duration"]
+- !private ["So11AVAudioFileC", "init"]
+- !private ["So11AVAudioFileC", "length"]
+- !private ["So11AVAudioFileC", "processingFormat"]
+- !private ["So13AVAudioFormatC", "sampleRate"]
+- !private ["So16AVAudioMixerNodeC", "init"]
+- !private ["So13AVAudioMixingP", "init"]
+- !private ["So13AVAudioMixingP", "lastRenderTime"]
+- !private ["So13AVAudioMixingP", "play"]
+- !private ["So13AVAudioMixingP", "playerTime"]
+- !private ["So13AVAudioMixingP", "scheduleFile"]
+- !private ["So11AVAudioNodeC", "init"]
+- !private ["So11AVAudioNodeC", "lastRenderTime"]
+- !private ["So11AVAudioNodeC", "play"]
+- !private ["So11AVAudioNodeC", "playerTime"]
+- !private ["So11AVAudioNodeC", "scheduleFile"]
+- !private ["So17AVAudioPlayerNodeC", "init"]
+- !private ["So17AVAudioPlayerNodeC", "lastRenderTime"]
+- !private ["So17AVAudioPlayerNodeC", "play"]
+- !private ["So17AVAudioPlayerNodeC", "playerTime"]
+- !private ["So17AVAudioPlayerNodeC", "scheduleFile"]
+- !private ["So14AVAudioSessionC", "Category"]
+- !private ["So14AVAudioSessionC", "setActive"]
+- !private ["So14AVAudioSessionC", "setCategory"]
+- ["So14AVAudioSessionC", "sharedInstance"]
+- !private ["So19AVAudioStereoMixingP", "init"]
+- !private ["So19AVAudioStereoMixingP", "lastRenderTime"]
+- !private ["So19AVAudioStereoMixingP", "play"]
+- !private ["So19AVAudioStereoMixingP", "playerTime"]
+- !private ["So19AVAudioStereoMixingP", "scheduleFile"]
+- !private ["So11AVAudioTimeC", "sampleRate"]
+- !private ["So11AVAudioTimeC", "sampleTime"]
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "forEach"]
+- ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- ["11AudioMixing0A6PlayerC", "AVAudioEngine"]
+- ["11AudioMixing0A6PlayerC", "AVAudioFile"]
+- !private ["11AudioMixing0A6PlayerC", "AVAudioFrameCount"]
+- ["11AudioMixing0A6PlayerC", "AVAudioMixerNode"]
+- ["11AudioMixing0A6PlayerC", "AVAudioPlayerNode"]
+- ["11AudioMixing0A6PlayerC", "AVAudioSession"]
+- !private ["11AudioMixing0A6PlayerC", "Double"]
+- ["11AudioMixing0A6PlayerC", "Int"]
+- ["11AudioMixing0A6PlayerC", "Timer"]
+- ["11AudioMixing0A6PlayerC", "URL"]
+- ["11AudioMixing0A6PlayerC", "audioFile"]
+- ["11AudioMixing0A6PlayerC", "currentFile"]
+- ["11AudioMixing0A6PlayerC", "currentPlayer"]
+- ["11AudioMixing0A6PlayerC", "deinit"]
+- ["11AudioMixing0A6PlayerC", "duration"]
+- ["11AudioMixing0A6PlayerC", "engine"]
+- ["11AudioMixing0A6PlayerC", "index"]
+- ["11AudioMixing0A6PlayerC", "init"]
+- ["11AudioMixing0A6PlayerC", "mixer"]
+- ["11AudioMixing0A6PlayerC", "playerNodes"]
+- !private ["11AudioMixing0A6PlayerC", "print"]
+- ["11AudioMixing0A6PlayerC", "removeObserver"]
+- ["11AudioMixing0A6PlayerC", "session"]
+- ["11AudioMixing0A6PlayerC", "setupPlayer"]
+- ["11AudioMixing0A6PlayerC", "start"]
+- ["11AudioMixing0A6PlayerC", "startObserver"]
+- ["11AudioMixing0A6PlayerC", "timer"]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- !private ["SK", "forEach"]
+- ["SK", "init"]
+- !private ["SK", "subscript"]
+- !private ["SB", "init"]
+- !private ["Sz", "init"]
+- !private ["s7CVarArgP", "Category"]
+- !private ["s7CVarArgP", "Double"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "attach"]
+- !private ["s7CVarArgP", "connect"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "duration"]
+- !private ["s7CVarArgP", "forEach"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "invalidate"]
+- !private ["s7CVarArgP", "lastRenderTime"]
+- !private ["s7CVarArgP", "length"]
+- !private ["s7CVarArgP", "outputNode"]
+- !private ["s7CVarArgP", "play"]
+- !private ["s7CVarArgP", "playerTime"]
+- !private ["s7CVarArgP", "processingFormat"]
+- !private ["s7CVarArgP", "sampleRate"]
+- !private ["s7CVarArgP", "sampleTime"]
+- !private ["s7CVarArgP", "scheduleFile"]
+- !private ["s7CVarArgP", "scheduledTimer"]
+- !private ["s7CVarArgP", "setActive"]
+- !private ["s7CVarArgP", "setCategory"]
+- ["s7CVarArgP", "sharedInstance"]
+- !private ["s7CVarArgP", "start"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["So22AVAudioSessionCategorya", "playAndRecord"]
+- !private ["So29AVAudioSessionCategoryOptionsV", "defaultToSpeaker"]
+- !private ["So29AVAudioSessionCategoryOptionsV", "mixWithOthers"]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
+- !private ["Sl", "forEach"]
+- ["Sl", "init"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "forEach"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "Category"]
+- !private ["s28CustomDebugStringConvertibleP", "Double"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "attach"]
+- !private ["s28CustomDebugStringConvertibleP", "connect"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "duration"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "invalidate"]
+- !private ["s28CustomDebugStringConvertibleP", "lastRenderTime"]
+- !private ["s28CustomDebugStringConvertibleP", "length"]
+- !private ["s28CustomDebugStringConvertibleP", "outputNode"]
+- !private ["s28CustomDebugStringConvertibleP", "play"]
+- !private ["s28CustomDebugStringConvertibleP", "playerTime"]
+- !private ["s28CustomDebugStringConvertibleP", "processingFormat"]
+- !private ["s28CustomDebugStringConvertibleP", "sampleRate"]
+- !private ["s28CustomDebugStringConvertibleP", "sampleTime"]
+- !private ["s28CustomDebugStringConvertibleP", "scheduleFile"]
+- !private ["s28CustomDebugStringConvertibleP", "scheduledTimer"]
+- !private ["s28CustomDebugStringConvertibleP", "setActive"]
+- !private ["s28CustomDebugStringConvertibleP", "setCategory"]
+- ["s28CustomDebugStringConvertibleP", "sharedInstance"]
+- !private ["s28CustomDebugStringConvertibleP", "start"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "forEach"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "invalidate"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "Category"]
+- !private ["s23CustomStringConvertibleP", "Double"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "attach"]
+- !private ["s23CustomStringConvertibleP", "connect"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "duration"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "invalidate"]
+- !private ["s23CustomStringConvertibleP", "lastRenderTime"]
+- !private ["s23CustomStringConvertibleP", "length"]
+- !private ["s23CustomStringConvertibleP", "outputNode"]
+- !private ["s23CustomStringConvertibleP", "play"]
+- !private ["s23CustomStringConvertibleP", "playerTime"]
+- !private ["s23CustomStringConvertibleP", "processingFormat"]
+- !private ["s23CustomStringConvertibleP", "sampleRate"]
+- !private ["s23CustomStringConvertibleP", "sampleTime"]
+- !private ["s23CustomStringConvertibleP", "scheduleFile"]
+- !private ["s23CustomStringConvertibleP", "scheduledTimer"]
+- !private ["s23CustomStringConvertibleP", "setActive"]
+- !private ["s23CustomStringConvertibleP", "setCategory"]
+- ["s23CustomStringConvertibleP", "sharedInstance"]
+- !private ["s23CustomStringConvertibleP", "start"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "forEach"]
+- ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "append"]
+- !private ["Se", "count"]
+- !private ["Se", "forEach"]
+- ["Se", "init"]
+- !private ["Se", "invalidate"]
+- !private ["Se", "subscript"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["Sd", "init"]
+- !private ["SE", "append"]
+- !private ["SE", "count"]
+- !private ["SE", "forEach"]
+- ["SE", "init"]
+- !private ["SE", "invalidate"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "Category"]
+- !private ["SQ", "Double"]
+- !private ["SQ", "append"]
+- !private ["SQ", "attach"]
+- !private ["SQ", "connect"]
+- !private ["SQ", "count"]
+- !private ["SQ", "defaultToSpeaker"]
+- !private ["SQ", "duration"]
+- !private ["SQ", "forEach"]
+- ["SQ", "init"]
+- !private ["SQ", "invalidate"]
+- !private ["SQ", "lastRenderTime"]
+- !private ["SQ", "length"]
+- !private ["SQ", "mixWithOthers"]
+- !private ["SQ", "outputNode"]
+- !private ["SQ", "play"]
+- !private ["SQ", "playAndRecord"]
+- !private ["SQ", "playerTime"]
+- !private ["SQ", "processingFormat"]
+- !private ["SQ", "sampleRate"]
+- !private ["SQ", "sampleTime"]
+- !private ["SQ", "scheduleFile"]
+- !private ["SQ", "scheduledTimer"]
+- !private ["SQ", "setActive"]
+- !private ["SQ", "setCategory"]
+- ["SQ", "sharedInstance"]
+- !private ["SQ", "start"]
+- !private ["SQ", "subscript"]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "defaultToSpeaker"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "mixWithOthers"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "invalidate"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SF", "init"]
+- !private ["SH", "Category"]
+- !private ["SH", "Double"]
+- !private ["SH", "append"]
+- !private ["SH", "attach"]
+- !private ["SH", "connect"]
+- !private ["SH", "count"]
+- !private ["SH", "duration"]
+- !private ["SH", "forEach"]
+- ["SH", "init"]
+- !private ["SH", "invalidate"]
+- !private ["SH", "lastRenderTime"]
+- !private ["SH", "length"]
+- !private ["SH", "outputNode"]
+- !private ["SH", "play"]
+- !private ["SH", "playAndRecord"]
+- !private ["SH", "playerTime"]
+- !private ["SH", "processingFormat"]
+- !private ["SH", "sampleRate"]
+- !private ["SH", "sampleTime"]
+- !private ["SH", "scheduleFile"]
+- !private ["SH", "scheduledTimer"]
+- !private ["SH", "setActive"]
+- !private ["SH", "setCategory"]
+- ["SH", "sharedInstance"]
+- !private ["SH", "start"]
+- !private ["SH", "subscript"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- !private ["SM", "forEach"]
+- ["SM", "init"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "forEach"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So8NSCodingP", "sampleRate"]
+- !private ["So8NSObjectC", "Category"]
+- !private ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "TimeInterval"]
+- !private ["So8NSObjectC", "attach"]
+- !private ["So8NSObjectC", "connect"]
+- ["So8NSObjectC", "duration"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "invalidate"]
+- !private ["So8NSObjectC", "lastRenderTime"]
+- !private ["So8NSObjectC", "length"]
+- !private ["So8NSObjectC", "outputNode"]
+- !private ["So8NSObjectC", "play"]
+- !private ["So8NSObjectC", "playerTime"]
+- !private ["So8NSObjectC", "processingFormat"]
+- !private ["So8NSObjectC", "sampleRate"]
+- !private ["So8NSObjectC", "sampleTime"]
+- !private ["So8NSObjectC", "scheduleFile"]
+- !private ["So8NSObjectC", "scheduledTimer"]
+- !private ["So8NSObjectC", "setActive"]
+- !private ["So8NSObjectC", "setCategory"]
+- ["So8NSObjectC", "sharedInstance"]
+- !private ["So8NSObjectC", "start"]
+- !private ["So8NSObjectP", "Category"]
+- !private ["So8NSObjectP", "Double"]
+- !private ["So8NSObjectP", "attach"]
+- !private ["So8NSObjectP", "connect"]
+- !private ["So8NSObjectP", "duration"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "invalidate"]
+- !private ["So8NSObjectP", "lastRenderTime"]
+- !private ["So8NSObjectP", "length"]
+- !private ["So8NSObjectP", "outputNode"]
+- !private ["So8NSObjectP", "play"]
+- !private ["So8NSObjectP", "playerTime"]
+- !private ["So8NSObjectP", "processingFormat"]
+- !private ["So8NSObjectP", "sampleRate"]
+- !private ["So8NSObjectP", "sampleTime"]
+- !private ["So8NSObjectP", "scheduleFile"]
+- !private ["So8NSObjectP", "scheduledTimer"]
+- !private ["So8NSObjectP", "setActive"]
+- !private ["So8NSObjectP", "setCategory"]
+- ["So8NSObjectP", "sharedInstance"]
+- !private ["So8NSObjectP", "start"]
+- !private ["So14NSSecureCodingP", "sampleRate"]
+- !private ["Sj", "init"]
+- !private ["s9OptionSetP", "defaultToSpeaker"]
+- !private ["s9OptionSetP", "mixWithOthers"]
+- !private ["Sq", "invalidate"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- !private ["Sk", "forEach"]
+- ["Sk", "init"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- !private ["Sm", "forEach"]
+- ["Sm", "init"]
+- !private ["Sm", "subscript"]
+- !private ["SY", "defaultToSpeaker"]
+- !private ["SY", "mixWithOthers"]
+- !private ["SY", "playAndRecord"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["ST", "append"]
+- !private ["ST", "count"]
+- !private ["ST", "forEach"]
+- ["ST", "init"]
+- !private ["ST", "subscript"]
+- !private ["s10SetAlgebraP", "defaultToSpeaker"]
+- !private ["s10SetAlgebraP", "mixWithOthers"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So7NSTimerC", "invalidate"]
+- !private ["So7NSTimerC", "scheduledTimer"]
+- !private ["s6UInt32V", "init"]
+- !private ["SU", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "forEach"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "forEach"]
+- ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "playAndRecord"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Category"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Double"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "attach"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "connect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "duration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "invalidate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lastRenderTime"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "length"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "outputNode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "play"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "playerTime"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "processingFormat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sampleRate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sampleTime"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scheduleFile"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scheduledTimer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setActive"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setCategory"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "start"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Category"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Double"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "attach"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "connect"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "duration"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "invalidate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "lastRenderTime"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "length"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "outputNode"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "play"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "playerTime"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "processingFormat"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sampleRate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sampleTime"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scheduleFile"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scheduledTimer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setActive"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setCategory"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sharedInstance"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "start"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "forEach"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "invalidate"]
+- !private ["s21_ObjectiveCBridgeableP", "playAndRecord"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s20_SwiftNewtypeWrapperP", "playAndRecord"]
+depends-nominal:
+- !private "So15AVAudio3DMixingP"
+- !private "So13AVAudioEngineC"
+- "So11AVAudioFileC"
+- !private "So13AVAudioFormatC"
+- !private "So16AVAudioMixerNodeC"
+- !private "So13AVAudioMixingP"
+- !private "So11AVAudioNodeC"
+- !private "So17AVAudioPlayerNodeC"
+- "So14AVAudioSessionC"
+- !private "So19AVAudioStereoMixingP"
+- !private "So11AVAudioTimeC"
+- !private "s18AdditiveArithmeticP"
+- "Sa"
+- "11AudioMixing0A6PlayerC"
+- "SK"
+- !private "SB"
+- !private "Sz"
+- "s7CVarArgP"
+- !private "So22AVAudioSessionCategorya"
+- !private "So29AVAudioSessionCategoryOptionsV"
+- "Sl"
+- !private "SL"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation12DataProtocolP"
+- "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "Sd"
+- "SE"
+- "SQ"
+- !private "s5ErrorP"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SF"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sj"
+- !private "s9OptionSetP"
+- !private "Sq"
+- "Sk"
+- "Sm"
+- !private "SY"
+- !private "s10SIMDScalarP"
+- "ST"
+- !private "s10SetAlgebraP"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So7NSTimerC"
+- !private "s6UInt32V"
+- !private "SU"
+- "s14_ArrayProtocolP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMIDI.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMedia.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/simd.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/AVFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreAudio.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "e1beaeb42a220d0b5736e78663da2498"
