@@ -18,6 +18,7 @@ class AudioPlayer {
     var playerNodes = [AVAudioPlayerNode]()
     var mixer: AVAudioMixerNode
     var timer: Timer!
+    var volumeTimer: Timer!
 
 	//Current Playing Index
     var index:Int = 0
@@ -25,6 +26,17 @@ class AudioPlayer {
 	/* Returns current AVPlayer */
 	var currentPlayer: AVAudioPlayerNode {
 	   return self.playerNodes[self.index]
+	}
+
+	/**
+		Previous Plaer node
+	*/
+	var previousPlayer: AVAudioPlayerNode? {
+		if self.index > 0 {
+			return self.playerNodes[self.index-1]
+		} else {
+			return nil
+		}
 	}
 
 	var currentFile: AVAudioFile {
@@ -69,8 +81,26 @@ class AudioPlayer {
 
 			//Start Engine and Play the audio track
 			try engine.start()
+			self.currentPlayer.volume = 0.1
 			self.currentPlayer.play()
 			self.startObserver()
+			self.volumeTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (timer) in
+
+				let volumeInterval = 0.1
+				//Decrease volume of prevoius player
+				if let player = self.previousPlayer {
+					let volumeInterval = 0.1
+					let currentVolume = player.volume
+					let newValue = max(Double(currentVolume) - volumeInterval, 0.0);
+					player.volume = Float(newValue);
+				}
+				let currentVolume = self.currentPlayer.volume
+				let newValue = max(Double(currentVolume) + volumeInterval, 1.0);
+				self.currentPlayer.volume = Float(newValue);
+				if (newValue == 1.0) {
+					timer.invalidate()
+				}
+			})
 		} catch  {
 			print("Error: \(error.localizedDescription)")
 		}

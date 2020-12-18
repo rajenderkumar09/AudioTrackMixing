@@ -16,22 +16,24 @@ provides-dynamic-lookup:
 - "index"
 - "mixer"
 - "playerNodes"
+- "previousPlayer"
 - "removeObserver"
 - "session"
 - "setupPlayer"
 - "start"
 - "startObserver"
 - "timer"
+- "volumeTimer"
 depends-top-level:
-- !private "*"
+- !private "+"
 - !private "+="
 - !private "-"
 - !private "/"
+- !private "=="
 - !private ">"
 - !private ">="
 - "AVAudioEngine"
 - "AVAudioFile"
-- !private "AVAudioFrameCount"
 - "AVAudioMixerNode"
 - "AVAudioPlayerNode"
 - "AVAudioSession"
@@ -39,6 +41,7 @@ depends-top-level:
 - "AudioPlayer"
 - !private "BooleanLiteralType"
 - !private "Double"
+- !private "Float"
 - "FloatLiteralType"
 - "Int"
 - "IntegerLiteralType"
@@ -46,6 +49,7 @@ depends-top-level:
 - "TimeInterval"
 - "Timer"
 - "URL"
+- !private "max"
 - !private "print"
 depends-member:
 - !private ["So15AVAudio3DMixingP", "init"]
@@ -53,6 +57,7 @@ depends-member:
 - !private ["So15AVAudio3DMixingP", "play"]
 - !private ["So15AVAudio3DMixingP", "playerTime"]
 - !private ["So15AVAudio3DMixingP", "scheduleFile"]
+- !private ["So15AVAudio3DMixingP", "volume"]
 - !private ["So13AVAudioEngineC", "attach"]
 - !private ["So13AVAudioEngineC", "connect"]
 - !private ["So13AVAudioEngineC", "init"]
@@ -71,16 +76,19 @@ depends-member:
 - !private ["So13AVAudioMixingP", "play"]
 - !private ["So13AVAudioMixingP", "playerTime"]
 - !private ["So13AVAudioMixingP", "scheduleFile"]
+- !private ["So13AVAudioMixingP", "volume"]
 - !private ["So11AVAudioNodeC", "init"]
 - !private ["So11AVAudioNodeC", "lastRenderTime"]
 - !private ["So11AVAudioNodeC", "play"]
 - !private ["So11AVAudioNodeC", "playerTime"]
 - !private ["So11AVAudioNodeC", "scheduleFile"]
+- !private ["So11AVAudioNodeC", "volume"]
 - !private ["So17AVAudioPlayerNodeC", "init"]
 - !private ["So17AVAudioPlayerNodeC", "lastRenderTime"]
 - !private ["So17AVAudioPlayerNodeC", "play"]
 - !private ["So17AVAudioPlayerNodeC", "playerTime"]
 - !private ["So17AVAudioPlayerNodeC", "scheduleFile"]
+- !private ["So17AVAudioPlayerNodeC", "volume"]
 - !private ["So14AVAudioSessionC", "Category"]
 - !private ["So14AVAudioSessionC", "setActive"]
 - !private ["So14AVAudioSessionC", "setCategory"]
@@ -90,6 +98,7 @@ depends-member:
 - !private ["So19AVAudioStereoMixingP", "play"]
 - !private ["So19AVAudioStereoMixingP", "playerTime"]
 - !private ["So19AVAudioStereoMixingP", "scheduleFile"]
+- !private ["So19AVAudioStereoMixingP", "volume"]
 - !private ["So11AVAudioTimeC", "sampleRate"]
 - !private ["So11AVAudioTimeC", "sampleTime"]
 - !private ["s18AdditiveArithmeticP", "init"]
@@ -100,11 +109,11 @@ depends-member:
 - !private ["Sa", "subscript"]
 - ["11AudioMixing0A6PlayerC", "AVAudioEngine"]
 - ["11AudioMixing0A6PlayerC", "AVAudioFile"]
-- !private ["11AudioMixing0A6PlayerC", "AVAudioFrameCount"]
 - ["11AudioMixing0A6PlayerC", "AVAudioMixerNode"]
 - ["11AudioMixing0A6PlayerC", "AVAudioPlayerNode"]
 - ["11AudioMixing0A6PlayerC", "AVAudioSession"]
 - !private ["11AudioMixing0A6PlayerC", "Double"]
+- !private ["11AudioMixing0A6PlayerC", "Float"]
 - ["11AudioMixing0A6PlayerC", "Int"]
 - ["11AudioMixing0A6PlayerC", "Timer"]
 - ["11AudioMixing0A6PlayerC", "URL"]
@@ -116,8 +125,10 @@ depends-member:
 - ["11AudioMixing0A6PlayerC", "engine"]
 - ["11AudioMixing0A6PlayerC", "index"]
 - ["11AudioMixing0A6PlayerC", "init"]
+- !private ["11AudioMixing0A6PlayerC", "max"]
 - ["11AudioMixing0A6PlayerC", "mixer"]
 - ["11AudioMixing0A6PlayerC", "playerNodes"]
+- ["11AudioMixing0A6PlayerC", "previousPlayer"]
 - !private ["11AudioMixing0A6PlayerC", "print"]
 - ["11AudioMixing0A6PlayerC", "removeObserver"]
 - ["11AudioMixing0A6PlayerC", "session"]
@@ -125,13 +136,13 @@ depends-member:
 - ["11AudioMixing0A6PlayerC", "start"]
 - ["11AudioMixing0A6PlayerC", "startObserver"]
 - ["11AudioMixing0A6PlayerC", "timer"]
+- ["11AudioMixing0A6PlayerC", "volumeTimer"]
 - !private ["SK", "append"]
 - !private ["SK", "count"]
 - !private ["SK", "forEach"]
 - ["SK", "init"]
 - !private ["SK", "subscript"]
 - !private ["SB", "init"]
-- !private ["Sz", "init"]
 - !private ["s7CVarArgP", "Category"]
 - !private ["s7CVarArgP", "Double"]
 - !private ["s7CVarArgP", "append"]
@@ -157,6 +168,7 @@ depends-member:
 - ["s7CVarArgP", "sharedInstance"]
 - !private ["s7CVarArgP", "start"]
 - !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "volume"]
 - !private ["So22AVAudioSessionCategorya", "playAndRecord"]
 - !private ["So29AVAudioSessionCategoryOptionsV", "defaultToSpeaker"]
 - !private ["So29AVAudioSessionCategoryOptionsV", "mixWithOthers"]
@@ -196,6 +208,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "sharedInstance"]
 - !private ["s28CustomDebugStringConvertibleP", "start"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "volume"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "forEach"]
@@ -229,6 +242,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "sharedInstance"]
 - !private ["s23CustomStringConvertibleP", "start"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "volume"]
 - !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "count"]
 - !private ["10Foundation12DataProtocolP", "forEach"]
@@ -277,6 +291,7 @@ depends-member:
 - ["SQ", "sharedInstance"]
 - !private ["SQ", "start"]
 - !private ["SQ", "subscript"]
+- !private ["SQ", "volume"]
 - !private ["s5ErrorP", "localizedDescription"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
@@ -288,7 +303,7 @@ depends-member:
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "invalidate"]
-- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["Sf", "init"]
 - !private ["SF", "init"]
 - !private ["SH", "Category"]
 - !private ["SH", "Double"]
@@ -316,6 +331,7 @@ depends-member:
 - ["SH", "sharedInstance"]
 - !private ["SH", "start"]
 - !private ["SH", "subscript"]
+- !private ["SH", "volume"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["SM", "append"]
 - !private ["SM", "count"]
@@ -350,6 +366,7 @@ depends-member:
 - !private ["So8NSObjectC", "setCategory"]
 - ["So8NSObjectC", "sharedInstance"]
 - !private ["So8NSObjectC", "start"]
+- !private ["So8NSObjectC", "volume"]
 - !private ["So8NSObjectP", "Category"]
 - !private ["So8NSObjectP", "Double"]
 - !private ["So8NSObjectP", "attach"]
@@ -371,6 +388,7 @@ depends-member:
 - !private ["So8NSObjectP", "setCategory"]
 - ["So8NSObjectP", "sharedInstance"]
 - !private ["So8NSObjectP", "start"]
+- !private ["So8NSObjectP", "volume"]
 - !private ["So14NSSecureCodingP", "sampleRate"]
 - !private ["Sj", "init"]
 - !private ["s9OptionSetP", "defaultToSpeaker"]
@@ -406,8 +424,6 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So7NSTimerC", "invalidate"]
 - !private ["So7NSTimerC", "scheduledTimer"]
-- !private ["s6UInt32V", "init"]
-- !private ["SU", "init"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "forEach"]
@@ -455,6 +471,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setCategory"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "start"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "volume"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Category"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Double"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "attach"]
@@ -476,6 +493,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setCategory"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sharedInstance"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "start"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "volume"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "forEach"]
@@ -501,7 +519,6 @@ depends-nominal:
 - "11AudioMixing0A6PlayerC"
 - "SK"
 - !private "SB"
-- !private "Sz"
 - "s7CVarArgP"
 - !private "So22AVAudioSessionCategorya"
 - !private "So29AVAudioSessionCategoryOptionsV"
@@ -522,7 +539,7 @@ depends-nominal:
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- !private "s17FixedWidthIntegerP"
+- !private "Sf"
 - !private "SF"
 - "SH"
 - !private "s25LosslessStringConvertibleP"
@@ -547,8 +564,6 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So7NSTimerC"
-- !private "s6UInt32V"
-- !private "SU"
 - "s14_ArrayProtocolP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
@@ -600,4 +615,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e1beaeb42a220d0b5736e78663da2498"
+interface-hash: "979c41e0a568e6d1e03ed266ed78a1a3"
