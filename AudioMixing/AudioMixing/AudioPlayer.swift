@@ -84,18 +84,17 @@ class AudioPlayer {
 			self.currentPlayer.volume = 0.1
 			self.currentPlayer.play()
 			self.startObserver()
-			self.volumeTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (timer) in
+			self.volumeTimer = Timer.scheduledTimer(withTimeInterval: 0.8, repeats: true, block: { (timer) in
 
-				let volumeInterval = 0.1
+				let volumeInterval = 1.0 / Double(self.duration)
 				//Decrease volume of prevoius player
 				if let player = self.previousPlayer {
-					let volumeInterval = 0.1
 					let currentVolume = player.volume
 					let newValue = max(Double(currentVolume) - volumeInterval, 0.0);
 					player.volume = Float(newValue);
 				}
 				let currentVolume = self.currentPlayer.volume
-				let newValue = max(Double(currentVolume) + volumeInterval, 1.0);
+				let newValue = min(Double(currentVolume) + volumeInterval, 1.0);
 				self.currentPlayer.volume = Float(newValue);
 				if (newValue == 1.0) {
 					timer.invalidate()

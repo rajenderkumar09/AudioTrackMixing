@@ -45,11 +45,12 @@ depends-top-level:
 - "FloatLiteralType"
 - "Int"
 - "IntegerLiteralType"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - "TimeInterval"
 - "Timer"
 - "URL"
 - !private "max"
+- !private "min"
 - !private "print"
 depends-member:
 - !private ["So15AVAudio3DMixingP", "init"]
@@ -126,6 +127,7 @@ depends-member:
 - ["11AudioMixing0A6PlayerC", "index"]
 - ["11AudioMixing0A6PlayerC", "init"]
 - !private ["11AudioMixing0A6PlayerC", "max"]
+- !private ["11AudioMixing0A6PlayerC", "min"]
 - ["11AudioMixing0A6PlayerC", "mixer"]
 - ["11AudioMixing0A6PlayerC", "playerNodes"]
 - ["11AudioMixing0A6PlayerC", "previousPlayer"]
