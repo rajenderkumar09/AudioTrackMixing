@@ -1,0 +1,681 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AudioViewController"
+provides-nominal:
+- "11AudioMixing0A14ViewControllerC"
+provides-member:
+- ["11AudioMixing0A14ViewControllerC", ""]
+provides-dynamic-lookup:
+- "audioEngine"
+- "audioPlayer"
+- "configureView"
+- "duration"
+- "pitchControl"
+- "play"
+- "speedControl"
+- "tracks"
+- "viewDidLoad"
+depends-top-level:
+- "AVAudioEngine"
+- !private "AVAudioFile"
+- "AVAudioPlayerNode"
+- "AVAudioUnitTimePitch"
+- "AVAudioUnitVarispeed"
+- "AssignmentPrecedence"
+- "AudioViewController"
+- !private "Bundle"
+- !private "CastingPrecedence"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "StringLiteralType"
+- "Track"
+- "UIViewController"
+- "URL"
+- !private "print"
+depends-member:
+- ["So15AVAudio3DMixingP", "init"]
+- !private ["So15AVAudio3DMixingP", "play"]
+- !private ["So15AVAudio3DMixingP", "scheduleFile"]
+- !private ["So13AVAudioEngineC", "attach"]
+- !private ["So13AVAudioEngineC", "connect"]
+- ["So13AVAudioEngineC", "init"]
+- !private ["So13AVAudioEngineC", "mainMixerNode"]
+- !private ["So13AVAudioEngineC", "start"]
+- !private ["So11AVAudioFileC", "init"]
+- ["So13AVAudioMixingP", "init"]
+- !private ["So13AVAudioMixingP", "play"]
+- !private ["So13AVAudioMixingP", "scheduleFile"]
+- ["So11AVAudioNodeC", "init"]
+- !private ["So11AVAudioNodeC", "play"]
+- !private ["So11AVAudioNodeC", "scheduleFile"]
+- ["So17AVAudioPlayerNodeC", "init"]
+- !private ["So17AVAudioPlayerNodeC", "play"]
+- !private ["So17AVAudioPlayerNodeC", "scheduleFile"]
+- ["So19AVAudioStereoMixingP", "init"]
+- !private ["So19AVAudioStereoMixingP", "play"]
+- !private ["So19AVAudioStereoMixingP", "scheduleFile"]
+- ["So11AVAudioUnitC", "init"]
+- ["So21AVAudioUnitTimeEffectC", "init"]
+- ["So20AVAudioUnitTimePitchC", "init"]
+- ["So20AVAudioUnitVarispeedC", "init"]
+- !private ["Sa", "enumerated"]
+- ["11AudioMixing0A14ViewControllerC", "AVAudioEngine"]
+- !private ["11AudioMixing0A14ViewControllerC", "AVAudioFile"]
+- ["11AudioMixing0A14ViewControllerC", "AVAudioPlayerNode"]
+- ["11AudioMixing0A14ViewControllerC", "AVAudioUnitTimePitch"]
+- ["11AudioMixing0A14ViewControllerC", "AVAudioUnitVarispeed"]
+- !private ["11AudioMixing0A14ViewControllerC", "Bundle"]
+- ["11AudioMixing0A14ViewControllerC", "Int"]
+- ["11AudioMixing0A14ViewControllerC", "Track"]
+- ["11AudioMixing0A14ViewControllerC", "URL"]
+- ["11AudioMixing0A14ViewControllerC", "audioEngine"]
+- ["11AudioMixing0A14ViewControllerC", "audioPlayer"]
+- !private ["11AudioMixing0A14ViewControllerC", "configureView"]
+- ["11AudioMixing0A14ViewControllerC", "deinit"]
+- ["11AudioMixing0A14ViewControllerC", "duration"]
+- ["11AudioMixing0A14ViewControllerC", "init"]
+- ["11AudioMixing0A14ViewControllerC", "pitchControl"]
+- ["11AudioMixing0A14ViewControllerC", "play"]
+- !private ["11AudioMixing0A14ViewControllerC", "print"]
+- ["11AudioMixing0A14ViewControllerC", "speedControl"]
+- !private ["11AudioMixing0A14ViewControllerC", "title"]
+- ["11AudioMixing0A14ViewControllerC", "tracks"]
+- ["11AudioMixing0A14ViewControllerC", "viewDidLoad"]
+- !private ["SK", "enumerated"]
+- !private ["So8NSBundleC", "main"]
+- !private ["So8NSBundleC", "path"]
+- ["s7CVarArgP", "AVAudioEngine"]
+- !private ["s7CVarArgP", "AVAudioFile"]
+- ["s7CVarArgP", "AVAudioPlayerNode"]
+- ["s7CVarArgP", "AVAudioUnitTimePitch"]
+- ["s7CVarArgP", "AVAudioUnitVarispeed"]
+- !private ["s7CVarArgP", "Bundle"]
+- !private ["s7CVarArgP", "URL"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "attach"]
+- !private ["s7CVarArgP", "audioEngine"]
+- !private ["s7CVarArgP", "configureView"]
+- !private ["s7CVarArgP", "connect"]
+- !private ["s7CVarArgP", "enumerated"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "mainMixerNode"]
+- !private ["s7CVarArgP", "path"]
+- !private ["s7CVarArgP", "pitchControl"]
+- !private ["s7CVarArgP", "play"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "scheduleFile"]
+- !private ["s7CVarArgP", "speedControl"]
+- !private ["s7CVarArgP", "start"]
+- !private ["s7CVarArgP", "title"]
+- !private ["s7CVarArgP", "tracks"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["Sl", "enumerated"]
+- !private ["10Foundation15ContiguousBytesP", "enumerated"]
+- ["s28CustomDebugStringConvertibleP", "AVAudioEngine"]
+- !private ["s28CustomDebugStringConvertibleP", "AVAudioFile"]
+- ["s28CustomDebugStringConvertibleP", "AVAudioPlayerNode"]
+- ["s28CustomDebugStringConvertibleP", "AVAudioUnitTimePitch"]
+- ["s28CustomDebugStringConvertibleP", "AVAudioUnitVarispeed"]
+- !private ["s28CustomDebugStringConvertibleP", "Bundle"]
+- !private ["s28CustomDebugStringConvertibleP", "URL"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "attach"]
+- !private ["s28CustomDebugStringConvertibleP", "audioEngine"]
+- !private ["s28CustomDebugStringConvertibleP", "configureView"]
+- !private ["s28CustomDebugStringConvertibleP", "connect"]
+- !private ["s28CustomDebugStringConvertibleP", "enumerated"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "mainMixerNode"]
+- !private ["s28CustomDebugStringConvertibleP", "path"]
+- !private ["s28CustomDebugStringConvertibleP", "pitchControl"]
+- !private ["s28CustomDebugStringConvertibleP", "play"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "scheduleFile"]
+- !private ["s28CustomDebugStringConvertibleP", "speedControl"]
+- !private ["s28CustomDebugStringConvertibleP", "start"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s28CustomDebugStringConvertibleP", "tracks"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s17CustomReflectableP", "enumerated"]
+- ["s23CustomStringConvertibleP", "AVAudioEngine"]
+- !private ["s23CustomStringConvertibleP", "AVAudioFile"]
+- ["s23CustomStringConvertibleP", "AVAudioPlayerNode"]
+- ["s23CustomStringConvertibleP", "AVAudioUnitTimePitch"]
+- ["s23CustomStringConvertibleP", "AVAudioUnitVarispeed"]
+- !private ["s23CustomStringConvertibleP", "Bundle"]
+- !private ["s23CustomStringConvertibleP", "URL"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "attach"]
+- !private ["s23CustomStringConvertibleP", "audioEngine"]
+- !private ["s23CustomStringConvertibleP", "configureView"]
+- !private ["s23CustomStringConvertibleP", "connect"]
+- !private ["s23CustomStringConvertibleP", "enumerated"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "mainMixerNode"]
+- !private ["s23CustomStringConvertibleP", "path"]
+- !private ["s23CustomStringConvertibleP", "pitchControl"]
+- !private ["s23CustomStringConvertibleP", "play"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "scheduleFile"]
+- !private ["s23CustomStringConvertibleP", "speedControl"]
+- !private ["s23CustomStringConvertibleP", "start"]
+- !private ["s23CustomStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "tracks"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["10Foundation12DataProtocolP", "enumerated"]
+- !private ["Se", "enumerated"]
+- !private ["Se", "fileName"]
+- !private ["Se", "init"]
+- !private ["Se", "type"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "enumerated"]
+- !private ["SE", "fileName"]
+- !private ["SE", "init"]
+- !private ["SE", "type"]
+- !private ["s18EnumeratedSequenceV", "forEach"]
+- ["SQ", "AVAudioEngine"]
+- !private ["SQ", "AVAudioFile"]
+- ["SQ", "AVAudioPlayerNode"]
+- ["SQ", "AVAudioUnitTimePitch"]
+- ["SQ", "AVAudioUnitVarispeed"]
+- !private ["SQ", "Bundle"]
+- !private ["SQ", "URL"]
+- ["SQ", ""]
+- !private ["SQ", "attach"]
+- !private ["SQ", "audioEngine"]
+- !private ["SQ", "configureView"]
+- !private ["SQ", "connect"]
+- !private ["SQ", "enumerated"]
+- ["SQ", "init"]
+- !private ["SQ", "main"]
+- !private ["SQ", "mainMixerNode"]
+- !private ["SQ", "path"]
+- !private ["SQ", "pitchControl"]
+- !private ["SQ", "play"]
+- !private ["SQ", "print"]
+- !private ["SQ", "scheduleFile"]
+- !private ["SQ", "speedControl"]
+- !private ["SQ", "start"]
+- !private ["SQ", "title"]
+- !private ["SQ", "tracks"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s25ExpressibleByArrayLiteralP", "enumerated"]
+- !private ["s23ExpressibleByNilLiteralP", "enumerated"]
+- ["SH", "AVAudioEngine"]
+- !private ["SH", "AVAudioFile"]
+- ["SH", "AVAudioPlayerNode"]
+- ["SH", "AVAudioUnitTimePitch"]
+- ["SH", "AVAudioUnitVarispeed"]
+- !private ["SH", "Bundle"]
+- !private ["SH", "URL"]
+- ["SH", ""]
+- !private ["SH", "attach"]
+- !private ["SH", "audioEngine"]
+- !private ["SH", "configureView"]
+- !private ["SH", "connect"]
+- !private ["SH", "enumerated"]
+- ["SH", "init"]
+- !private ["SH", "main"]
+- !private ["SH", "mainMixerNode"]
+- !private ["SH", "path"]
+- !private ["SH", "pitchControl"]
+- !private ["SH", "play"]
+- !private ["SH", "print"]
+- !private ["SH", "scheduleFile"]
+- !private ["SH", "speedControl"]
+- !private ["SH", "start"]
+- !private ["SH", "title"]
+- !private ["SH", "tracks"]
+- !private ["SH", "viewDidLoad"]
+- !private ["SM", "enumerated"]
+- !private ["10Foundation19MutableDataProtocolP", "enumerated"]
+- ["So8NSCodingP", "AVAudioEngine"]
+- !private ["So8NSCodingP", "AVAudioFile"]
+- ["So8NSCodingP", "AVAudioPlayerNode"]
+- ["So8NSCodingP", "AVAudioUnitTimePitch"]
+- ["So8NSCodingP", "AVAudioUnitVarispeed"]
+- !private ["So8NSCodingP", "Bundle"]
+- !private ["So8NSCodingP", "URL"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "audioEngine"]
+- !private ["So8NSCodingP", "configureView"]
+- !private ["So8NSCodingP", "pitchControl"]
+- !private ["So8NSCodingP", "play"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "speedControl"]
+- !private ["So8NSCodingP", "title"]
+- !private ["So8NSCodingP", "tracks"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", "AVAudioEngine"]
+- !private ["So26NSExtensionRequestHandlingP", "AVAudioFile"]
+- ["So26NSExtensionRequestHandlingP", "AVAudioPlayerNode"]
+- ["So26NSExtensionRequestHandlingP", "AVAudioUnitTimePitch"]
+- ["So26NSExtensionRequestHandlingP", "AVAudioUnitVarispeed"]
+- !private ["So26NSExtensionRequestHandlingP", "Bundle"]
+- !private ["So26NSExtensionRequestHandlingP", "URL"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "audioEngine"]
+- !private ["So26NSExtensionRequestHandlingP", "configureView"]
+- !private ["So26NSExtensionRequestHandlingP", "pitchControl"]
+- !private ["So26NSExtensionRequestHandlingP", "play"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "speedControl"]
+- !private ["So26NSExtensionRequestHandlingP", "title"]
+- !private ["So26NSExtensionRequestHandlingP", "tracks"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", "AVAudioEngine"]
+- !private ["So8NSObjectC", "AVAudioFile"]
+- ["So8NSObjectC", "AVAudioPlayerNode"]
+- ["So8NSObjectC", "AVAudioUnitTimePitch"]
+- ["So8NSObjectC", "AVAudioUnitVarispeed"]
+- !private ["So8NSObjectC", "Bundle"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "Track"]
+- ["So8NSObjectC", "URL"]
+- !private ["So8NSObjectC", "attach"]
+- ["So8NSObjectC", "audioEngine"]
+- ["So8NSObjectC", "audioPlayer"]
+- ["So8NSObjectC", "configureView"]
+- !private ["So8NSObjectC", "connect"]
+- ["So8NSObjectC", "duration"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "mainMixerNode"]
+- !private ["So8NSObjectC", "path"]
+- ["So8NSObjectC", "pitchControl"]
+- ["So8NSObjectC", "play"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "scheduleFile"]
+- ["So8NSObjectC", "speedControl"]
+- !private ["So8NSObjectC", "start"]
+- !private ["So8NSObjectC", "title"]
+- ["So8NSObjectC", "tracks"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectP", "AVAudioEngine"]
+- !private ["So8NSObjectP", "AVAudioFile"]
+- ["So8NSObjectP", "AVAudioPlayerNode"]
+- ["So8NSObjectP", "AVAudioUnitTimePitch"]
+- ["So8NSObjectP", "AVAudioUnitVarispeed"]
+- !private ["So8NSObjectP", "Bundle"]
+- !private ["So8NSObjectP", "URL"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "attach"]
+- !private ["So8NSObjectP", "audioEngine"]
+- !private ["So8NSObjectP", "configureView"]
+- !private ["So8NSObjectP", "connect"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "main"]
+- !private ["So8NSObjectP", "mainMixerNode"]
+- !private ["So8NSObjectP", "path"]
+- !private ["So8NSObjectP", "pitchControl"]
+- !private ["So8NSObjectP", "play"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "scheduleFile"]
+- !private ["So8NSObjectP", "speedControl"]
+- !private ["So8NSObjectP", "start"]
+- !private ["So8NSObjectP", "title"]
+- !private ["So8NSObjectP", "tracks"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["Sq", "enumerated"]
+- !private ["Sk", "enumerated"]
+- !private ["Sm", "enumerated"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["ST", "enumerated"]
+- !private ["ST", "forEach"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["11AudioMixing5TrackV", "fileName"]
+- !private ["11AudioMixing5TrackV", "type"]
+- ["So21UIAppearanceContainerP", "AVAudioEngine"]
+- !private ["So21UIAppearanceContainerP", "AVAudioFile"]
+- ["So21UIAppearanceContainerP", "AVAudioPlayerNode"]
+- ["So21UIAppearanceContainerP", "AVAudioUnitTimePitch"]
+- ["So21UIAppearanceContainerP", "AVAudioUnitVarispeed"]
+- !private ["So21UIAppearanceContainerP", "Bundle"]
+- !private ["So21UIAppearanceContainerP", "URL"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "audioEngine"]
+- !private ["So21UIAppearanceContainerP", "configureView"]
+- !private ["So21UIAppearanceContainerP", "pitchControl"]
+- !private ["So21UIAppearanceContainerP", "play"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "speedControl"]
+- !private ["So21UIAppearanceContainerP", "title"]
+- !private ["So21UIAppearanceContainerP", "tracks"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", "AVAudioEngine"]
+- !private ["So18UIContentContainerP", "AVAudioFile"]
+- ["So18UIContentContainerP", "AVAudioPlayerNode"]
+- ["So18UIContentContainerP", "AVAudioUnitTimePitch"]
+- ["So18UIContentContainerP", "AVAudioUnitVarispeed"]
+- !private ["So18UIContentContainerP", "Bundle"]
+- !private ["So18UIContentContainerP", "URL"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "audioEngine"]
+- !private ["So18UIContentContainerP", "configureView"]
+- !private ["So18UIContentContainerP", "pitchControl"]
+- !private ["So18UIContentContainerP", "play"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "speedControl"]
+- !private ["So18UIContentContainerP", "title"]
+- !private ["So18UIContentContainerP", "tracks"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", "AVAudioEngine"]
+- !private ["So18UIFocusEnvironmentP", "AVAudioFile"]
+- ["So18UIFocusEnvironmentP", "AVAudioPlayerNode"]
+- ["So18UIFocusEnvironmentP", "AVAudioUnitTimePitch"]
+- ["So18UIFocusEnvironmentP", "AVAudioUnitVarispeed"]
+- !private ["So18UIFocusEnvironmentP", "Bundle"]
+- !private ["So18UIFocusEnvironmentP", "URL"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "audioEngine"]
+- !private ["So18UIFocusEnvironmentP", "configureView"]
+- !private ["So18UIFocusEnvironmentP", "pitchControl"]
+- !private ["So18UIFocusEnvironmentP", "play"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "speedControl"]
+- !private ["So18UIFocusEnvironmentP", "title"]
+- !private ["So18UIFocusEnvironmentP", "tracks"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", "AVAudioEngine"]
+- !private ["So30UIPasteConfigurationSupportingP", "AVAudioFile"]
+- ["So30UIPasteConfigurationSupportingP", "AVAudioPlayerNode"]
+- ["So30UIPasteConfigurationSupportingP", "AVAudioUnitTimePitch"]
+- ["So30UIPasteConfigurationSupportingP", "AVAudioUnitVarispeed"]
+- !private ["So30UIPasteConfigurationSupportingP", "Bundle"]
+- !private ["So30UIPasteConfigurationSupportingP", "URL"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "audioEngine"]
+- !private ["So30UIPasteConfigurationSupportingP", "configureView"]
+- !private ["So30UIPasteConfigurationSupportingP", "pitchControl"]
+- !private ["So30UIPasteConfigurationSupportingP", "play"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "speedControl"]
+- !private ["So30UIPasteConfigurationSupportingP", "title"]
+- !private ["So30UIPasteConfigurationSupportingP", "tracks"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", "AVAudioEngine"]
+- !private ["So11UIResponderC", "AVAudioFile"]
+- ["So11UIResponderC", "AVAudioPlayerNode"]
+- ["So11UIResponderC", "AVAudioUnitTimePitch"]
+- ["So11UIResponderC", "AVAudioUnitVarispeed"]
+- !private ["So11UIResponderC", "Bundle"]
+- ["So11UIResponderC", "Int"]
+- ["So11UIResponderC", "Track"]
+- ["So11UIResponderC", "URL"]
+- ["So11UIResponderC", "audioEngine"]
+- ["So11UIResponderC", "audioPlayer"]
+- ["So11UIResponderC", "configureView"]
+- ["So11UIResponderC", "duration"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "pitchControl"]
+- ["So11UIResponderC", "play"]
+- !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "speedControl"]
+- !private ["So11UIResponderC", "title"]
+- ["So11UIResponderC", "tracks"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", "AVAudioEngine"]
+- !private ["So30UIResponderStandardEditActionsP", "AVAudioFile"]
+- ["So30UIResponderStandardEditActionsP", "AVAudioPlayerNode"]
+- ["So30UIResponderStandardEditActionsP", "AVAudioUnitTimePitch"]
+- ["So30UIResponderStandardEditActionsP", "AVAudioUnitVarispeed"]
+- !private ["So30UIResponderStandardEditActionsP", "Bundle"]
+- !private ["So30UIResponderStandardEditActionsP", "URL"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "audioEngine"]
+- !private ["So30UIResponderStandardEditActionsP", "configureView"]
+- !private ["So30UIResponderStandardEditActionsP", "pitchControl"]
+- !private ["So30UIResponderStandardEditActionsP", "play"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "speedControl"]
+- !private ["So30UIResponderStandardEditActionsP", "title"]
+- !private ["So30UIResponderStandardEditActionsP", "tracks"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So16UIStateRestoringP", "AVAudioEngine"]
+- !private ["So16UIStateRestoringP", "AVAudioFile"]
+- ["So16UIStateRestoringP", "AVAudioPlayerNode"]
+- ["So16UIStateRestoringP", "AVAudioUnitTimePitch"]
+- ["So16UIStateRestoringP", "AVAudioUnitVarispeed"]
+- !private ["So16UIStateRestoringP", "Bundle"]
+- !private ["So16UIStateRestoringP", "URL"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "audioEngine"]
+- !private ["So16UIStateRestoringP", "configureView"]
+- !private ["So16UIStateRestoringP", "pitchControl"]
+- !private ["So16UIStateRestoringP", "play"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "speedControl"]
+- !private ["So16UIStateRestoringP", "title"]
+- !private ["So16UIStateRestoringP", "tracks"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", "AVAudioEngine"]
+- !private ["So18UITraitEnvironmentP", "AVAudioFile"]
+- ["So18UITraitEnvironmentP", "AVAudioPlayerNode"]
+- ["So18UITraitEnvironmentP", "AVAudioUnitTimePitch"]
+- ["So18UITraitEnvironmentP", "AVAudioUnitVarispeed"]
+- !private ["So18UITraitEnvironmentP", "Bundle"]
+- !private ["So18UITraitEnvironmentP", "URL"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "audioEngine"]
+- !private ["So18UITraitEnvironmentP", "configureView"]
+- !private ["So18UITraitEnvironmentP", "pitchControl"]
+- !private ["So18UITraitEnvironmentP", "play"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "speedControl"]
+- !private ["So18UITraitEnvironmentP", "title"]
+- !private ["So18UITraitEnvironmentP", "tracks"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So23UIUserActivityRestoringP", "AVAudioEngine"]
+- !private ["So23UIUserActivityRestoringP", "AVAudioFile"]
+- ["So23UIUserActivityRestoringP", "AVAudioPlayerNode"]
+- ["So23UIUserActivityRestoringP", "AVAudioUnitTimePitch"]
+- ["So23UIUserActivityRestoringP", "AVAudioUnitVarispeed"]
+- !private ["So23UIUserActivityRestoringP", "Bundle"]
+- !private ["So23UIUserActivityRestoringP", "URL"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "audioEngine"]
+- !private ["So23UIUserActivityRestoringP", "configureView"]
+- !private ["So23UIUserActivityRestoringP", "pitchControl"]
+- !private ["So23UIUserActivityRestoringP", "play"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "speedControl"]
+- !private ["So23UIUserActivityRestoringP", "title"]
+- !private ["So23UIUserActivityRestoringP", "tracks"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- ["So16UIViewControllerC", "AVAudioEngine"]
+- !private ["So16UIViewControllerC", "AVAudioFile"]
+- ["So16UIViewControllerC", "AVAudioPlayerNode"]
+- ["So16UIViewControllerC", "AVAudioUnitTimePitch"]
+- ["So16UIViewControllerC", "AVAudioUnitVarispeed"]
+- !private ["So16UIViewControllerC", "Bundle"]
+- ["So16UIViewControllerC", "Int"]
+- ["So16UIViewControllerC", "Track"]
+- ["So16UIViewControllerC", "URL"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "audioEngine"]
+- ["So16UIViewControllerC", "audioPlayer"]
+- ["So16UIViewControllerC", "configureView"]
+- ["So16UIViewControllerC", "duration"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "pitchControl"]
+- ["So16UIViewControllerC", "play"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "speedControl"]
+- !private ["So16UIViewControllerC", "title"]
+- ["So16UIViewControllerC", "tracks"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["s14_ArrayProtocolP", "enumerated"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "enumerated"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "enumerated"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "enumerated"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "AVAudioEngine"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AVAudioFile"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "AVAudioPlayerNode"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "AVAudioUnitTimePitch"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "AVAudioUnitVarispeed"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "attach"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "audioEngine"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "configureView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "connect"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mainMixerNode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "path"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pitchControl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "play"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scheduleFile"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "speedControl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "start"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tracks"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AVAudioEngine"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AVAudioFile"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AVAudioPlayerNode"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AVAudioUnitTimePitch"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AVAudioUnitVarispeed"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Bundle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "URL"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "attach"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "audioEngine"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "configureView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "connect"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "mainMixerNode"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "path"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "pitchControl"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "play"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scheduleFile"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "speedControl"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "start"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "title"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tracks"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "enumerated"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- "So15AVAudio3DMixingP"
+- "So13AVAudioEngineC"
+- !private "So11AVAudioFileC"
+- "So13AVAudioMixingP"
+- "So11AVAudioNodeC"
+- "So17AVAudioPlayerNodeC"
+- "So19AVAudioStereoMixingP"
+- "So11AVAudioUnitC"
+- "So21AVAudioUnitTimeEffectC"
+- "So20AVAudioUnitTimePitchC"
+- "So20AVAudioUnitVarispeedC"
+- !private "Sa"
+- "11AudioMixing0A14ViewControllerC"
+- !private "SK"
+- !private "So8NSBundleC"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- !private "s18EnumeratedSequenceV"
+- "SQ"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sq"
+- !private "Sk"
+- !private "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "11AudioMixing5TrackV"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So16UIViewControllerC"
+- !private "10Foundation3URLV"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMIDI.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMedia.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/simd.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/AVFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreAudio.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "17e85d51db418897a8a3d24b99cdd34c"

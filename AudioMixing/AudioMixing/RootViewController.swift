@@ -184,7 +184,7 @@ class RootViewController: UIViewController {
 			}
 			return trackURL
 		}
-		self.audioEngine = AudioPlayer(urls)
+		self.audioEngine = AudioPlayer(urls, duration: self.duration)
 		self.audioEngine.start()
 		/*
 		let audioEngineVC = AudioViewController(nibName: "AudioViewController", bundle: nil)

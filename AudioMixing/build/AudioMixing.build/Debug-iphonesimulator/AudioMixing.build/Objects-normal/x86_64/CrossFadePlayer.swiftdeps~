@@ -1,0 +1,559 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CrossFadePlayer"
+provides-nominal:
+- "11AudioMixing15CrossFadePlayerC"
+provides-member:
+- ["11AudioMixing15CrossFadePlayerC", ""]
+- ["So12AVPlayerItemC", ""]
+- ["So12AVPlayerItemC", "addFadeInOut"]
+provides-dynamic-lookup:
+- "addFadeInOut"
+- "crossFadeDuration"
+- "currentPlayer"
+- "index"
+- "items"
+- "playerQueue"
+- "session"
+- "timeObserverToken"
+depends-top-level:
+- !private "+="
+- !private "-"
+- !private "<"
+- !private "AVAssetTrack"
+- "AVAudioSession"
+- !private "AVMutableAudioMix"
+- !private "AVMutableAudioMixInputParameters"
+- "AVPlayer"
+- "AVPlayerItem"
+- "AssignmentPrecedence"
+- !private "CMTimeGetSeconds"
+- !private "CMTimeMakeWithSeconds"
+- !private "CMTimeRangeMake"
+- !private "CMTimeScale"
+- "CastingPrecedence"
+- "CrossFadePlayer"
+- "Double"
+- "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- !private "NSEC_PER_SEC"
+- "NSObject"
+- !private "StringLiteralType"
+- "TimeInterval"
+- "Track"
+- !private "addPeriodicTimeObserver"
+- !private "addVolumeRamps"
+- !private "handleCrossFade"
+- !private "playerQueue"
+- !private "print"
+- !private "removePeriodicTimeObserver"
+- !private "self"
+- !private "timeObserverToken"
+- !private "trackURL"
+depends-member:
+- !private ["So7AVAssetC", "duration"]
+- !private ["So7AVAssetC", "tracks"]
+- !private ["So29AVAsynchronousKeyValueLoadingP", "duration"]
+- !private ["So29AVAsynchronousKeyValueLoadingP", "tracks"]
+- !private ["So10AVAudioMixC", "init"]
+- !private ["So10AVAudioMixC", "inputParameters"]
+- !private ["So25AVAudioMixInputParametersC", "init"]
+- !private ["So25AVAudioMixInputParametersC", "setVolumeRamp"]
+- ["So14AVAudioSessionC", "sharedInstance"]
+- !private ["So17AVMutableAudioMixC", "init"]
+- !private ["So17AVMutableAudioMixC", "inputParameters"]
+- !private ["So32AVMutableAudioMixInputParametersC", "init"]
+- !private ["So32AVMutableAudioMixInputParametersC", "setVolumeRamp"]
+- !private ["So8AVPlayerC", "removeTimeObserver"]
+- !private ["So12AVPlayerItemC", "AVAssetTrack"]
+- !private ["So12AVPlayerItemC", "AVMutableAudioMix"]
+- !private ["So12AVPlayerItemC", "AVMutableAudioMixInputParameters"]
+- !private ["So12AVPlayerItemC", "CMTimeGetSeconds"]
+- !private ["So12AVPlayerItemC", "CMTimeMakeWithSeconds"]
+- !private ["So12AVPlayerItemC", "CMTimeRangeMake"]
+- !private ["So12AVPlayerItemC", "CMTimeScale"]
+- !private ["So12AVPlayerItemC", "NSEC_PER_SEC"]
+- ["So12AVPlayerItemC", "TimeInterval"]
+- ["So12AVPlayerItemC", "addFadeInOut"]
+- !private ["So12AVPlayerItemC", "asset"]
+- !private ["So12AVPlayerItemC", "audioMix"]
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["Sa", "append"]
+- !private ["Sa", "enumerated"]
+- !private ["Sa", "first"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "append"]
+- !private ["SK", "enumerated"]
+- !private ["SK", "first"]
+- !private ["SK", "subscript"]
+- !private ["Sz", "init"]
+- ["s7CVarArgP", "AVAudioSession"]
+- !private ["s7CVarArgP", "AVMutableAudioMix"]
+- !private ["s7CVarArgP", "AVMutableAudioMixInputParameters"]
+- !private ["s7CVarArgP", "AVPlayer"]
+- !private ["s7CVarArgP", "AVPlayerItem"]
+- !private ["s7CVarArgP", "CMTimeGetSeconds"]
+- !private ["s7CVarArgP", "CMTimeMakeWithSeconds"]
+- !private ["s7CVarArgP", "CMTimeRangeMake"]
+- !private ["s7CVarArgP", "CMTimeScale"]
+- !private ["s7CVarArgP", "NSEC_PER_SEC"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "asset"]
+- !private ["s7CVarArgP", "audioMix"]
+- !private ["s7CVarArgP", "crossFadeDuration"]
+- !private ["s7CVarArgP", "duration"]
+- !private ["s7CVarArgP", "enumerated"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "index"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "inputParameters"]
+- !private ["s7CVarArgP", "items"]
+- !private ["s7CVarArgP", "playerQueue"]
+- !private ["s7CVarArgP", "removeTimeObserver"]
+- !private ["s7CVarArgP", "setVolumeRamp"]
+- ["s7CVarArgP", "sharedInstance"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "trackURL"]
+- !private ["s7CVarArgP", "tracks"]
+- !private ["Sl", "append"]
+- !private ["Sl", "enumerated"]
+- !private ["Sl", "first"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "enumerated"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- ["11AudioMixing15CrossFadePlayerC", "AVAudioSession"]
+- ["11AudioMixing15CrossFadePlayerC", "AVPlayer"]
+- !private ["11AudioMixing15CrossFadePlayerC", "AVPlayerItem"]
+- ["11AudioMixing15CrossFadePlayerC", "Double"]
+- ["11AudioMixing15CrossFadePlayerC", "Int"]
+- ["11AudioMixing15CrossFadePlayerC", "Track"]
+- ["11AudioMixing15CrossFadePlayerC", "crossFadeDuration"]
+- ["11AudioMixing15CrossFadePlayerC", "currentPlayer"]
+- ["11AudioMixing15CrossFadePlayerC", "deinit"]
+- ["11AudioMixing15CrossFadePlayerC", "index"]
+- ["11AudioMixing15CrossFadePlayerC", "init"]
+- ["11AudioMixing15CrossFadePlayerC", "items"]
+- ["11AudioMixing15CrossFadePlayerC", "playerQueue"]
+- ["11AudioMixing15CrossFadePlayerC", "session"]
+- ["11AudioMixing15CrossFadePlayerC", "timeObserverToken"]
+- !private ["11AudioMixing15CrossFadePlayerC", "trackURL"]
+- ["s28CustomDebugStringConvertibleP", "AVAudioSession"]
+- !private ["s28CustomDebugStringConvertibleP", "AVMutableAudioMix"]
+- !private ["s28CustomDebugStringConvertibleP", "AVMutableAudioMixInputParameters"]
+- !private ["s28CustomDebugStringConvertibleP", "AVPlayer"]
+- !private ["s28CustomDebugStringConvertibleP", "AVPlayerItem"]
+- !private ["s28CustomDebugStringConvertibleP", "CMTimeGetSeconds"]
+- !private ["s28CustomDebugStringConvertibleP", "CMTimeMakeWithSeconds"]
+- !private ["s28CustomDebugStringConvertibleP", "CMTimeRangeMake"]
+- !private ["s28CustomDebugStringConvertibleP", "CMTimeScale"]
+- !private ["s28CustomDebugStringConvertibleP", "NSEC_PER_SEC"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "asset"]
+- !private ["s28CustomDebugStringConvertibleP", "audioMix"]
+- !private ["s28CustomDebugStringConvertibleP", "crossFadeDuration"]
+- !private ["s28CustomDebugStringConvertibleP", "duration"]
+- !private ["s28CustomDebugStringConvertibleP", "enumerated"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "index"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "inputParameters"]
+- !private ["s28CustomDebugStringConvertibleP", "items"]
+- !private ["s28CustomDebugStringConvertibleP", "playerQueue"]
+- !private ["s28CustomDebugStringConvertibleP", "removeTimeObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "setVolumeRamp"]
+- ["s28CustomDebugStringConvertibleP", "sharedInstance"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "trackURL"]
+- !private ["s28CustomDebugStringConvertibleP", "tracks"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "enumerated"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- ["s23CustomStringConvertibleP", "AVAudioSession"]
+- !private ["s23CustomStringConvertibleP", "AVMutableAudioMix"]
+- !private ["s23CustomStringConvertibleP", "AVMutableAudioMixInputParameters"]
+- !private ["s23CustomStringConvertibleP", "AVPlayer"]
+- !private ["s23CustomStringConvertibleP", "AVPlayerItem"]
+- !private ["s23CustomStringConvertibleP", "CMTimeGetSeconds"]
+- !private ["s23CustomStringConvertibleP", "CMTimeMakeWithSeconds"]
+- !private ["s23CustomStringConvertibleP", "CMTimeRangeMake"]
+- !private ["s23CustomStringConvertibleP", "CMTimeScale"]
+- !private ["s23CustomStringConvertibleP", "NSEC_PER_SEC"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "asset"]
+- !private ["s23CustomStringConvertibleP", "audioMix"]
+- !private ["s23CustomStringConvertibleP", "crossFadeDuration"]
+- !private ["s23CustomStringConvertibleP", "duration"]
+- !private ["s23CustomStringConvertibleP", "enumerated"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "index"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "inputParameters"]
+- !private ["s23CustomStringConvertibleP", "items"]
+- !private ["s23CustomStringConvertibleP", "playerQueue"]
+- !private ["s23CustomStringConvertibleP", "removeTimeObserver"]
+- !private ["s23CustomStringConvertibleP", "setVolumeRamp"]
+- ["s23CustomStringConvertibleP", "sharedInstance"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "trackURL"]
+- !private ["s23CustomStringConvertibleP", "tracks"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "enumerated"]
+- !private ["10Foundation12DataProtocolP", "first"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "append"]
+- !private ["Se", "enumerated"]
+- !private ["Se", "first"]
+- !private ["Se", "init"]
+- !private ["Se", "subscript"]
+- !private ["SE", "append"]
+- !private ["SE", "enumerated"]
+- !private ["SE", "first"]
+- !private ["SE", "init"]
+- !private ["SE", "subscript"]
+- !private ["s18EnumeratedSequenceV", "forEach"]
+- ["SQ", "AVAudioSession"]
+- !private ["SQ", "AVMutableAudioMix"]
+- !private ["SQ", "AVMutableAudioMixInputParameters"]
+- !private ["SQ", "AVPlayer"]
+- !private ["SQ", "AVPlayerItem"]
+- !private ["SQ", "CMTimeGetSeconds"]
+- !private ["SQ", "CMTimeMakeWithSeconds"]
+- !private ["SQ", "CMTimeRangeMake"]
+- !private ["SQ", "CMTimeScale"]
+- !private ["SQ", "NSEC_PER_SEC"]
+- ["SQ", ""]
+- !private ["SQ", "append"]
+- !private ["SQ", "asset"]
+- !private ["SQ", "audioMix"]
+- !private ["SQ", "crossFadeDuration"]
+- !private ["SQ", "duration"]
+- !private ["SQ", "enumerated"]
+- !private ["SQ", "first"]
+- !private ["SQ", "index"]
+- !private ["SQ", "init"]
+- !private ["SQ", "inputParameters"]
+- !private ["SQ", "items"]
+- !private ["SQ", "playerQueue"]
+- !private ["SQ", "removeTimeObserver"]
+- !private ["SQ", "setVolumeRamp"]
+- ["SQ", "sharedInstance"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "trackURL"]
+- !private ["SQ", "tracks"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "enumerated"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- ["SH", "AVAudioSession"]
+- !private ["SH", "AVMutableAudioMix"]
+- !private ["SH", "AVMutableAudioMixInputParameters"]
+- !private ["SH", "AVPlayer"]
+- !private ["SH", "AVPlayerItem"]
+- !private ["SH", "CMTimeGetSeconds"]
+- !private ["SH", "CMTimeMakeWithSeconds"]
+- !private ["SH", "CMTimeRangeMake"]
+- !private ["SH", "CMTimeScale"]
+- !private ["SH", "NSEC_PER_SEC"]
+- ["SH", ""]
+- !private ["SH", "append"]
+- !private ["SH", "asset"]
+- !private ["SH", "audioMix"]
+- !private ["SH", "crossFadeDuration"]
+- !private ["SH", "duration"]
+- !private ["SH", "enumerated"]
+- !private ["SH", "first"]
+- !private ["SH", "index"]
+- !private ["SH", "init"]
+- !private ["SH", "inputParameters"]
+- !private ["SH", "items"]
+- !private ["SH", "playerQueue"]
+- !private ["SH", "removeTimeObserver"]
+- !private ["SH", "setVolumeRamp"]
+- ["SH", "sharedInstance"]
+- !private ["SH", "subscript"]
+- !private ["SH", "trackURL"]
+- !private ["SH", "tracks"]
+- !private ["s5Int32V", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["SM", "append"]
+- !private ["SM", "enumerated"]
+- !private ["SM", "first"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "enumerated"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So9NSCopyingP", "AVMutableAudioMix"]
+- !private ["So9NSCopyingP", "AVMutableAudioMixInputParameters"]
+- !private ["So9NSCopyingP", "CMTimeGetSeconds"]
+- !private ["So9NSCopyingP", "CMTimeMakeWithSeconds"]
+- !private ["So9NSCopyingP", "CMTimeRangeMake"]
+- !private ["So9NSCopyingP", "CMTimeScale"]
+- !private ["So9NSCopyingP", "NSEC_PER_SEC"]
+- !private ["So9NSCopyingP", "asset"]
+- !private ["So9NSCopyingP", "audioMix"]
+- !private ["So9NSCopyingP", "duration"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "inputParameters"]
+- !private ["So9NSCopyingP", "setVolumeRamp"]
+- !private ["So9NSCopyingP", "tracks"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "inputParameters"]
+- !private ["So16NSMutableCopyingP", "setVolumeRamp"]
+- !private ["So8NSObjectC", "AVAssetTrack"]
+- ["So8NSObjectC", "AVAudioSession"]
+- !private ["So8NSObjectC", "AVMutableAudioMix"]
+- !private ["So8NSObjectC", "AVMutableAudioMixInputParameters"]
+- ["So8NSObjectC", "AVPlayer"]
+- !private ["So8NSObjectC", "AVPlayerItem"]
+- !private ["So8NSObjectC", "CMTimeGetSeconds"]
+- !private ["So8NSObjectC", "CMTimeMakeWithSeconds"]
+- !private ["So8NSObjectC", "CMTimeRangeMake"]
+- !private ["So8NSObjectC", "CMTimeScale"]
+- ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "NSEC_PER_SEC"]
+- ["So8NSObjectC", "TimeInterval"]
+- ["So8NSObjectC", "Track"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "addFadeInOut"]
+- !private ["So8NSObjectC", "asset"]
+- !private ["So8NSObjectC", "audioMix"]
+- ["So8NSObjectC", "crossFadeDuration"]
+- ["So8NSObjectC", "currentPlayer"]
+- !private ["So8NSObjectC", "duration"]
+- ["So8NSObjectC", "index"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "inputParameters"]
+- ["So8NSObjectC", "items"]
+- ["So8NSObjectC", "playerQueue"]
+- !private ["So8NSObjectC", "removeTimeObserver"]
+- ["So8NSObjectC", "session"]
+- !private ["So8NSObjectC", "setVolumeRamp"]
+- ["So8NSObjectC", "sharedInstance"]
+- ["So8NSObjectC", "timeObserverToken"]
+- !private ["So8NSObjectC", "trackURL"]
+- !private ["So8NSObjectC", "tracks"]
+- ["So8NSObjectP", "AVAudioSession"]
+- !private ["So8NSObjectP", "AVMutableAudioMix"]
+- !private ["So8NSObjectP", "AVMutableAudioMixInputParameters"]
+- !private ["So8NSObjectP", "AVPlayer"]
+- !private ["So8NSObjectP", "AVPlayerItem"]
+- !private ["So8NSObjectP", "CMTimeGetSeconds"]
+- !private ["So8NSObjectP", "CMTimeMakeWithSeconds"]
+- !private ["So8NSObjectP", "CMTimeRangeMake"]
+- !private ["So8NSObjectP", "CMTimeScale"]
+- !private ["So8NSObjectP", "NSEC_PER_SEC"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "asset"]
+- !private ["So8NSObjectP", "audioMix"]
+- !private ["So8NSObjectP", "crossFadeDuration"]
+- !private ["So8NSObjectP", "duration"]
+- !private ["So8NSObjectP", "index"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "inputParameters"]
+- !private ["So8NSObjectP", "items"]
+- !private ["So8NSObjectP", "playerQueue"]
+- !private ["So8NSObjectP", "removeTimeObserver"]
+- !private ["So8NSObjectP", "setVolumeRamp"]
+- ["So8NSObjectP", "sharedInstance"]
+- !private ["So8NSObjectP", "trackURL"]
+- !private ["So8NSObjectP", "tracks"]
+- !private ["Sj", "init"]
+- !private ["Sk", "append"]
+- !private ["Sk", "enumerated"]
+- !private ["Sk", "first"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
+- !private ["Sm", "enumerated"]
+- !private ["Sm", "first"]
+- !private ["Sm", "subscript"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["ST", "append"]
+- !private ["ST", "enumerated"]
+- !private ["ST", "first"]
+- !private ["ST", "forEach"]
+- !private ["ST", "subscript"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "enumerated"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "enumerated"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "enumerated"]
+- !private ["s19_HasContiguousBytesP", "first"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "enumerated"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "AVAudioSession"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AVMutableAudioMix"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AVMutableAudioMixInputParameters"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AVPlayer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AVPlayerItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CMTimeGetSeconds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CMTimeMakeWithSeconds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CMTimeRangeMake"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CMTimeScale"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSEC_PER_SEC"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "asset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "audioMix"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "crossFadeDuration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "duration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "index"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "inputParameters"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "items"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "playerQueue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeTimeObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setVolumeRamp"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "trackURL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tracks"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AVAudioSession"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AVMutableAudioMix"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AVMutableAudioMixInputParameters"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AVPlayer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AVPlayerItem"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CMTimeGetSeconds"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CMTimeMakeWithSeconds"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CMTimeRangeMake"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CMTimeScale"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSEC_PER_SEC"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "asset"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "audioMix"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "crossFadeDuration"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "duration"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "index"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "inputParameters"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "items"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "playerQueue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "removeTimeObserver"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setVolumeRamp"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sharedInstance"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "trackURL"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tracks"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "enumerated"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- !private "So7AVAssetC"
+- !private "So29AVAsynchronousKeyValueLoadingP"
+- !private "So10AVAudioMixC"
+- !private "So25AVAudioMixInputParametersC"
+- "So14AVAudioSessionC"
+- !private "So17AVMutableAudioMixC"
+- !private "So32AVMutableAudioMixInputParametersC"
+- !private "So8AVPlayerC"
+- "So12AVPlayerItemC"
+- !private "s18AdditiveArithmeticP"
+- !private "Sa"
+- !private "SK"
+- !private "Sz"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- "11AudioMixing15CrossFadePlayerC"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- !private "s18EnumeratedSequenceV"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "SH"
+- !private "s5Int32V"
+- !private "s25LosslessStringConvertibleP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So9NSCopyingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sj"
+- !private "Sk"
+- !private "Sm"
+- !private "s10SIMDScalarP"
+- !private "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMIDI.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMedia.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/simd.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/AVFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreAudio.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "e5adf450b6e2b4bd08e0f288fe160d88"
