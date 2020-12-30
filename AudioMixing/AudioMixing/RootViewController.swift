@@ -126,6 +126,23 @@ class RootViewController: UIViewController {
 		}
 	}
 
+	/**
+	 UIButton Outlet for stopping all audio players.
+	*/
+	@IBOutlet weak var stopPlayersButton: UIButton! {
+		/**
+			Configure Engine Button UI
+		*/
+		didSet {
+			stopPlayersButton.layer.cornerRadius = 8.0
+			stopPlayersButton.layer.borderColor = UIColor.black.cgColor
+			stopPlayersButton.layer.borderWidth = 0.5
+
+			stopPlayersButton.setTitle("Stop All Players", for: .normal)
+			stopPlayersButton.setTitleColor(.red, for: .normal)
+		}
+	}
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
@@ -171,6 +188,18 @@ class RootViewController: UIViewController {
 			print("Error: \(error)")
 		}
 		*/
+	}
+
+	/**
+		Button action for stopping all players.
+	*/
+	@IBAction func stopAllPlayers(_ sender: UIButton) {
+		if let engine = self.audioEngine {
+			engine.stop()
+		}
+		if let looper = self.looper {
+			looper.stop()
+		}
 	}
 
 	/**

@@ -12,6 +12,7 @@ provides-dynamic-lookup:
 - "play"
 - "player"
 - "queue"
+- "stop"
 depends-top-level:
 - "AVAudioPlayer"
 - "AVAudioPlayerDelegate"
@@ -53,7 +54,9 @@ depends-member:
 - !private ["s7CVarArgP", "player"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "queue"]
+- !private ["s7CVarArgP", "stop"]
 - !private ["11AudioMixing15CrossFadePlayerC", "init"]
+- !private ["11AudioMixing15CrossFadePlayerC", "stop"]
 - !private ["s28CustomDebugStringConvertibleP", "CrossFadePlayer"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "audioPlayerBeginInterruption"]
@@ -67,6 +70,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "player"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "queue"]
+- !private ["s28CustomDebugStringConvertibleP", "stop"]
+- !private ["s17CustomReflectableP", "stop"]
 - !private ["s23CustomStringConvertibleP", "CrossFadePlayer"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
@@ -82,8 +87,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "player"]
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "queue"]
+- !private ["s23CustomStringConvertibleP", "stop"]
+- !private ["Se", "stop"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "stop"]
 - !private ["SQ", "CrossFadePlayer"]
 - ["SQ", ""]
 - ["SQ", "audioPlayerBeginInterruption"]
@@ -97,7 +105,9 @@ depends-member:
 - !private ["SQ", "player"]
 - !private ["SQ", "print"]
 - !private ["SQ", "queue"]
+- !private ["SQ", "stop"]
 - !private ["s5ErrorP", "localizedDescription"]
+- !private ["s23ExpressibleByNilLiteralP", "stop"]
 - !private ["SH", "CrossFadePlayer"]
 - ["SH", ""]
 - ["SH", "audioPlayerBeginInterruption"]
@@ -111,6 +121,7 @@ depends-member:
 - !private ["SH", "player"]
 - !private ["SH", "print"]
 - !private ["SH", "queue"]
+- !private ["SH", "stop"]
 - ["11AudioMixing6LooperC", "AVAudioPlayer"]
 - ["11AudioMixing6LooperC", "Bool"]
 - ["11AudioMixing6LooperC", "CrossFadePlayer"]
@@ -129,6 +140,7 @@ depends-member:
 - ["11AudioMixing6LooperC", "player"]
 - !private ["11AudioMixing6LooperC", "print"]
 - ["11AudioMixing6LooperC", "queue"]
+- ["11AudioMixing6LooperC", "stop"]
 - ["So8NSObjectC", "AVAudioPlayer"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CrossFadePlayer"]
@@ -147,6 +159,7 @@ depends-member:
 - ["So8NSObjectC", "player"]
 - !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "queue"]
+- ["So8NSObjectC", "stop"]
 - !private ["So8NSObjectP", "CrossFadePlayer"]
 - ["So8NSObjectP", ""]
 - ["So8NSObjectP", "audioPlayerBeginInterruption"]
@@ -160,6 +173,8 @@ depends-member:
 - !private ["So8NSObjectP", "player"]
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "queue"]
+- !private ["So8NSObjectP", "stop"]
+- !private ["Sq", "stop"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
@@ -177,6 +192,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "player"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "queue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stop"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CrossFadePlayer"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "audioPlayerBeginInterruption"]
@@ -190,23 +206,31 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "player"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "queue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "stop"]
+- !private ["s21_ObjectiveCBridgeableP", "stop"]
 depends-nominal:
 - "So21AVAudioPlayerDelegateP"
 - "s7CVarArgP"
 - !private "11AudioMixing15CrossFadePlayerC"
 - "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "Se"
 - !private "s26DefaultStringInterpolationV"
+- !private "SE"
 - "SQ"
 - !private "s5ErrorP"
+- !private "s23ExpressibleByNilLiteralP"
 - "SH"
 - "11AudioMixing6LooperC"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "Sq"
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -245,4 +269,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2eeca20195f5ed4034b7489ead7938ed"
+interface-hash: "ede5d561fdc4324aa1e70b294a1455cf"

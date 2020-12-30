@@ -5,7 +5,9 @@ provides-nominal:
 - "11AudioMixing15CrossFadePlayerC"
 provides-member:
 - ["11AudioMixing15CrossFadePlayerC", ""]
+- ["So8AVPlayerC", ""]
 - ["So12AVPlayerItemC", ""]
+- ["So8AVPlayerC", "stop"]
 - ["So12AVPlayerItemC", "addFadeInOut"]
 provides-dynamic-lookup:
 - "addFadeInOut"
@@ -19,6 +21,7 @@ provides-dynamic-lookup:
 - "playerQueue"
 - "removePeriodicTimeObserver"
 - "session"
+- "stop"
 - "timeObserverToken"
 depends-top-level:
 - !private "+="
@@ -35,6 +38,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - !private "Bundle"
+- !private "CMTime"
 - !private "CMTimeCompare"
 - !private "CMTimeGetSeconds"
 - !private "CMTimeMakeWithSeconds"
@@ -70,12 +74,15 @@ depends-member:
 - !private ["So17AVMutableAudioMixC", "inputParameters"]
 - !private ["So32AVMutableAudioMixInputParametersC", "init"]
 - !private ["So32AVMutableAudioMixInputParametersC", "setVolumeRamp"]
+- !private ["So8AVPlayerC", "CMTime"]
 - !private ["So8AVPlayerC", "addPeriodicTimeObserver"]
 - !private ["So8AVPlayerC", "currentItem"]
 - !private ["So8AVPlayerC", "init"]
+- !private ["So8AVPlayerC", "pause"]
 - !private ["So8AVPlayerC", "play"]
 - !private ["So8AVPlayerC", "removeTimeObserver"]
 - !private ["So8AVPlayerC", "seek"]
+- ["So8AVPlayerC", "stop"]
 - !private ["So12AVPlayerItemC", "AVAssetTrack"]
 - !private ["So12AVPlayerItemC", "AVMutableAudioMix"]
 - !private ["So12AVPlayerItemC", "AVMutableAudioMixInputParameters"]
@@ -111,6 +118,7 @@ depends-member:
 - !private ["s7CVarArgP", "AVPlayer"]
 - !private ["s7CVarArgP", "AVPlayerItem"]
 - !private ["s7CVarArgP", "Bundle"]
+- !private ["s7CVarArgP", "CMTime"]
 - !private ["s7CVarArgP", "CMTimeCompare"]
 - !private ["s7CVarArgP", "CMTimeGetSeconds"]
 - !private ["s7CVarArgP", "CMTimeMakeWithSeconds"]
@@ -140,6 +148,7 @@ depends-member:
 - !private ["s7CVarArgP", "items"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "path"]
+- !private ["s7CVarArgP", "pause"]
 - !private ["s7CVarArgP", "play"]
 - !private ["s7CVarArgP", "playerQueue"]
 - !private ["s7CVarArgP", "print"]
@@ -152,6 +161,7 @@ depends-member:
 - !private ["s7CVarArgP", "setVolumeRamp"]
 - ["s7CVarArgP", "sharedInstance"]
 - !private ["s7CVarArgP", "status"]
+- !private ["s7CVarArgP", "stop"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "timeObserverToken"]
 - !private ["s7CVarArgP", "tracks"]
@@ -193,6 +203,7 @@ depends-member:
 - !private ["11AudioMixing15CrossFadePlayerC", "print"]
 - !private ["11AudioMixing15CrossFadePlayerC", "removePeriodicTimeObserver"]
 - ["11AudioMixing15CrossFadePlayerC", "session"]
+- ["11AudioMixing15CrossFadePlayerC", "stop"]
 - ["11AudioMixing15CrossFadePlayerC", "timeObserverToken"]
 - ["s28CustomDebugStringConvertibleP", "AVAudioSession"]
 - !private ["s28CustomDebugStringConvertibleP", "AVMutableAudioMix"]
@@ -200,6 +211,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "AVPlayer"]
 - !private ["s28CustomDebugStringConvertibleP", "AVPlayerItem"]
 - !private ["s28CustomDebugStringConvertibleP", "Bundle"]
+- !private ["s28CustomDebugStringConvertibleP", "CMTime"]
 - !private ["s28CustomDebugStringConvertibleP", "CMTimeCompare"]
 - !private ["s28CustomDebugStringConvertibleP", "CMTimeGetSeconds"]
 - !private ["s28CustomDebugStringConvertibleP", "CMTimeMakeWithSeconds"]
@@ -229,6 +241,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "items"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "path"]
+- !private ["s28CustomDebugStringConvertibleP", "pause"]
 - !private ["s28CustomDebugStringConvertibleP", "play"]
 - !private ["s28CustomDebugStringConvertibleP", "playerQueue"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
@@ -241,6 +254,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "setVolumeRamp"]
 - ["s28CustomDebugStringConvertibleP", "sharedInstance"]
 - !private ["s28CustomDebugStringConvertibleP", "status"]
+- !private ["s28CustomDebugStringConvertibleP", "stop"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "timeObserverToken"]
 - !private ["s28CustomDebugStringConvertibleP", "tracks"]
@@ -259,6 +273,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "AVPlayer"]
 - !private ["s23CustomStringConvertibleP", "AVPlayerItem"]
 - !private ["s23CustomStringConvertibleP", "Bundle"]
+- !private ["s23CustomStringConvertibleP", "CMTime"]
 - !private ["s23CustomStringConvertibleP", "CMTimeCompare"]
 - !private ["s23CustomStringConvertibleP", "CMTimeGetSeconds"]
 - !private ["s23CustomStringConvertibleP", "CMTimeMakeWithSeconds"]
@@ -290,6 +305,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "items"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "path"]
+- !private ["s23CustomStringConvertibleP", "pause"]
 - !private ["s23CustomStringConvertibleP", "play"]
 - !private ["s23CustomStringConvertibleP", "playerQueue"]
 - !private ["s23CustomStringConvertibleP", "print"]
@@ -302,6 +318,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "setVolumeRamp"]
 - ["s23CustomStringConvertibleP", "sharedInstance"]
 - !private ["s23CustomStringConvertibleP", "status"]
+- !private ["s23CustomStringConvertibleP", "stop"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "timeObserverToken"]
 - !private ["s23CustomStringConvertibleP", "tracks"]
@@ -343,6 +360,7 @@ depends-member:
 - !private ["SQ", "AVPlayer"]
 - !private ["SQ", "AVPlayerItem"]
 - !private ["SQ", "Bundle"]
+- !private ["SQ", "CMTime"]
 - !private ["SQ", "CMTimeCompare"]
 - !private ["SQ", "CMTimeGetSeconds"]
 - !private ["SQ", "CMTimeMakeWithSeconds"]
@@ -372,6 +390,7 @@ depends-member:
 - !private ["SQ", "items"]
 - !private ["SQ", "main"]
 - !private ["SQ", "path"]
+- !private ["SQ", "pause"]
 - !private ["SQ", "play"]
 - !private ["SQ", "playback"]
 - !private ["SQ", "playerQueue"]
@@ -386,6 +405,7 @@ depends-member:
 - !private ["SQ", "setVolumeRamp"]
 - ["SQ", "sharedInstance"]
 - !private ["SQ", "status"]
+- !private ["SQ", "stop"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "timeObserverToken"]
 - !private ["SQ", "tracks"]
@@ -404,6 +424,7 @@ depends-member:
 - !private ["SH", "AVPlayer"]
 - !private ["SH", "AVPlayerItem"]
 - !private ["SH", "Bundle"]
+- !private ["SH", "CMTime"]
 - !private ["SH", "CMTimeCompare"]
 - !private ["SH", "CMTimeGetSeconds"]
 - !private ["SH", "CMTimeMakeWithSeconds"]
@@ -433,6 +454,7 @@ depends-member:
 - !private ["SH", "items"]
 - !private ["SH", "main"]
 - !private ["SH", "path"]
+- !private ["SH", "pause"]
 - !private ["SH", "play"]
 - !private ["SH", "playback"]
 - !private ["SH", "playerQueue"]
@@ -447,6 +469,7 @@ depends-member:
 - !private ["SH", "setVolumeRamp"]
 - ["SH", "sharedInstance"]
 - !private ["SH", "status"]
+- !private ["SH", "stop"]
 - !private ["SH", "subscript"]
 - !private ["SH", "timeObserverToken"]
 - !private ["SH", "tracks"]
@@ -489,6 +512,7 @@ depends-member:
 - ["So8NSObjectC", "AVPlayer"]
 - !private ["So8NSObjectC", "AVPlayerItem"]
 - !private ["So8NSObjectC", "Bundle"]
+- !private ["So8NSObjectC", "CMTime"]
 - !private ["So8NSObjectC", "CMTimeCompare"]
 - !private ["So8NSObjectC", "CMTimeGetSeconds"]
 - !private ["So8NSObjectC", "CMTimeMakeWithSeconds"]
@@ -518,6 +542,7 @@ depends-member:
 - ["So8NSObjectC", "items"]
 - !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "path"]
+- !private ["So8NSObjectC", "pause"]
 - !private ["So8NSObjectC", "play"]
 - ["So8NSObjectC", "playerQueue"]
 - !private ["So8NSObjectC", "print"]
@@ -530,6 +555,7 @@ depends-member:
 - !private ["So8NSObjectC", "setVolumeRamp"]
 - ["So8NSObjectC", "sharedInstance"]
 - !private ["So8NSObjectC", "status"]
+- ["So8NSObjectC", "stop"]
 - ["So8NSObjectC", "timeObserverToken"]
 - !private ["So8NSObjectC", "tracks"]
 - ["So8NSObjectP", "AVAudioSession"]
@@ -538,6 +564,7 @@ depends-member:
 - !private ["So8NSObjectP", "AVPlayer"]
 - !private ["So8NSObjectP", "AVPlayerItem"]
 - !private ["So8NSObjectP", "Bundle"]
+- !private ["So8NSObjectP", "CMTime"]
 - !private ["So8NSObjectP", "CMTimeCompare"]
 - !private ["So8NSObjectP", "CMTimeGetSeconds"]
 - !private ["So8NSObjectP", "CMTimeMakeWithSeconds"]
@@ -563,6 +590,7 @@ depends-member:
 - !private ["So8NSObjectP", "items"]
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "path"]
+- !private ["So8NSObjectP", "pause"]
 - !private ["So8NSObjectP", "play"]
 - !private ["So8NSObjectP", "playerQueue"]
 - !private ["So8NSObjectP", "print"]
@@ -575,6 +603,7 @@ depends-member:
 - !private ["So8NSObjectP", "setVolumeRamp"]
 - ["So8NSObjectP", "sharedInstance"]
 - !private ["So8NSObjectP", "status"]
+- !private ["So8NSObjectP", "stop"]
 - !private ["So8NSObjectP", "timeObserverToken"]
 - !private ["So8NSObjectP", "tracks"]
 - !private ["Sj", "init"]
@@ -645,6 +674,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AVPlayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AVPlayerItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CMTime"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CMTimeCompare"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CMTimeGetSeconds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CMTimeMakeWithSeconds"]
@@ -670,6 +700,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "items"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "path"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pause"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "play"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "playerQueue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
@@ -682,6 +713,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setVolumeRamp"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "status"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stop"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timeObserverToken"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tracks"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AVAudioSession"]
@@ -690,6 +722,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AVPlayer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AVPlayerItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Bundle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CMTime"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CMTimeCompare"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CMTimeGetSeconds"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CMTimeMakeWithSeconds"]
@@ -715,6 +748,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "items"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "path"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "pause"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "play"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "playerQueue"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
@@ -727,6 +761,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setVolumeRamp"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sharedInstance"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "status"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "stop"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "timeObserverToken"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tracks"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
@@ -747,7 +782,7 @@ depends-nominal:
 - "So14AVAudioSessionC"
 - !private "So17AVMutableAudioMixC"
 - !private "So32AVMutableAudioMixInputParametersC"
-- !private "So8AVPlayerC"
+- "So8AVPlayerC"
 - "So12AVPlayerItemC"
 - !private "s18AdditiveArithmeticP"
 - !private "Sa"
@@ -853,4 +888,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "67d99b0292d48ee7fb316f6b93ed4fbd"
+interface-hash: "a02ebc0db62b5942cb2fa590022d1490"

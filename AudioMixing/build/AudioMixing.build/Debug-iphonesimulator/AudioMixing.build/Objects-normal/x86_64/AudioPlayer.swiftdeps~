@@ -25,6 +25,7 @@ provides-dynamic-lookup:
 - "setupPlayer"
 - "start"
 - "startObserver"
+- "stop"
 - "timer"
 - "volumeTimer"
 depends-top-level:
@@ -71,6 +72,7 @@ depends-member:
 - !private ["So13AVAudioEngineC", "init"]
 - !private ["So13AVAudioEngineC", "outputNode"]
 - !private ["So13AVAudioEngineC", "start"]
+- !private ["So13AVAudioEngineC", "stop"]
 - !private ["So11AVAudioFileC", "Double"]
 - ["So11AVAudioFileC", "TimeInterval"]
 - ["So11AVAudioFileC", "duration"]
@@ -153,6 +155,7 @@ depends-member:
 - ["11AudioMixing0A6PlayerC", "setupPlayer"]
 - ["11AudioMixing0A6PlayerC", "start"]
 - ["11AudioMixing0A6PlayerC", "startObserver"]
+- ["11AudioMixing0A6PlayerC", "stop"]
 - ["11AudioMixing0A6PlayerC", "timer"]
 - ["11AudioMixing0A6PlayerC", "volumeTimer"]
 - !private ["SK", "append"]
@@ -697,4 +700,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d28f64d4e52d047fdf8e14a01e5a59ed"
+interface-hash: "0d98d995e2b9f67672e211ff9205ec45"

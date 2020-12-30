@@ -53,6 +53,10 @@ class AudioPlayer {
 		}
     }
 
+	/**
+		Setup AVAudioPlayerNode based for playing audio tracks.
+		Depreciated: This method hads been depreciated and being used in the code now.
+	*/
 	func setupPlayer() {
 		if playerNodes.count-1 < index {
 			let player = AVAudioPlayerNode()
@@ -65,7 +69,7 @@ class AudioPlayer {
 		Setup Audio engine and start palying audio tracks
 	*/
     func start() {
-		self.setupPlayer()
+		//self.setupPlayer()
 		engine.attach(self.currentPlayer)
         engine.attach(mixer)
 
@@ -93,7 +97,10 @@ class AudioPlayer {
 		Method used to fade in/fade out audio volumes, Timer is used to perform the action.
 	*/
 	func fadeInOutAudio() {
-		self.volumeTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { [unowned self] (timer) in
+		self.currentPlayer.volume = 0.1
+		self.previousPlayer?.volume = 1.0
+
+		self.volumeTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [unowned self] (timer) in
 
 			let volumeInterval = 1.0 / Double(self.duration)
 			//Decrease volume of prevoius player
@@ -112,6 +119,9 @@ class AudioPlayer {
 		})
 	}
 
+	/**
+	 Observer logic for time fade out duration using Timer.
+	*/
 	func startObserver() {
 		self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {[unowned self] timer in
 
@@ -139,23 +149,55 @@ class AudioPlayer {
         }
 	}
 
+	/**
+		Remove Observer and invalidate/ clear timer object.
+		Also detech mixer node.
+	*/
 	func removeObserver() {
 		self.timer.invalidate()
 		self.timer = nil
+		//self.engine.detach(mixer)
 	}
 
+	/**
+		Method for deteching audio nodes and cleanup the players and mixer node.
+	*/
 	func cleanUpAndDetachPlayerNode() {
-		self.engine.detach(mixer);
 		if let player = self.previousPlayer {
 			player.stop()
 			self.engine.detach(player)
 			//self.playerNodes.remove(at: self.index-1)
 		}
 	}
+
+	/**
+	Stop audio player and audio engine. Invalidate timers and set to nil.
+
+	*/
+	func stop(){
+		self.currentPlayer.stop()
+		self.previousPlayer?.stop()
+
+		self.engine.stop()
+
+		if let timer = self.volumeTimer {
+			timer.invalidate()
+			timer.invalidate()
+		}
+		if let timer = self.timer {
+			timer.invalidate()
+			timer.invalidate()
+		}
+		self.volumeTimer = nil
+		self.timer = nil
+	}
 }
 
 extension AVAudioFile{
 
+	/**
+		Calculate AVAudioFile duration.
+	*/
     var duration: TimeInterval{
         let sampleRateSong = Double(processingFormat.sampleRate)
         let lengthSongSeconds = Double(length) / sampleRateSong

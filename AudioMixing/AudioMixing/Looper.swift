@@ -35,11 +35,9 @@ class Looper: NSObject {
 		}
 	}
 
-//	func stop() {
-//		if self.player.isPlaying {
-//			self.player.stop()
-//		}
-//	}
+	func stop() {
+		self.player.stop()
+	}
 }
 
 extension Looper: AVAudioPlayerDelegate {

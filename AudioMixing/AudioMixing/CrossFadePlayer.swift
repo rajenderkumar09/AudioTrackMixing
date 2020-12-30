@@ -66,6 +66,11 @@ class CrossFadePlayer: NSObject {
         self.currentPlayer.play()
     }
 
+	//Stop player
+	func stop() {
+		self.currentPlayer.stop()
+	}
+
     /// Add volume ramps for all players in queue.
     fileprivate func addVolumeRamps(with duration: Double) {
         for player in self.playerQueue {
@@ -125,6 +130,12 @@ class CrossFadePlayer: NSObject {
     }
 }
 
+extension AVPlayer {
+   func stop(){
+    self.seek(to: CMTime.zero)
+    self.pause()
+   }
+}
 
 extension AVPlayerItem {
 	// Applies a fade in and out

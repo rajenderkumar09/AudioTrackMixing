@@ -210,6 +210,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
 @class UIApplication;
 @class UISceneSession;
 @class UISceneConnectionOptions;
@@ -270,11 +272,15 @@ SWIFT_CLASS("_TtC11AudioMixing18RootViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified playButton;
 /// UIButton Outlet for connecting AudioEngineViewController Screen
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified audioEngineButton;
+/// UIButton Outlet for stopping all audio players.
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified stopPlayersButton;
 - (void)viewDidLoad;
 /// Mixing Duration button action
 - (IBAction)mixingDurationAction:(UIButton * _Nonnull)sender;
 /// Play button action
 - (IBAction)playTracks:(UIButton * _Nonnull)sender;
+/// Button action for stopping all players.
+- (IBAction)stopAllPlayers:(UIButton * _Nonnull)sender;
 /// AudioEngineButton Action
 - (IBAction)audioEngineAction:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

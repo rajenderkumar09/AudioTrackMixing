@@ -59,6 +59,13 @@
                                     <action selector="audioEngineAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mc8-7b-mgU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHR-Ny-FJf">
+                                <rect key="frame" x="122" y="485" width="170" height="34"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopAllPlayers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FaY-ov-wQk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -67,13 +74,17 @@
                             <constraint firstItem="LKw-Eo-gXN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Sc-9A-TVE"/>
                             <constraint firstItem="yZF-QV-T4l" firstAttribute="leading" secondItem="4w0-64-D11" secondAttribute="leading" id="6W9-hu-p2t"/>
                             <constraint firstItem="yZF-QV-T4l" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="7U6-10-qDG"/>
+                            <constraint firstItem="BUH-sY-YMO" firstAttribute="height" secondItem="BHR-Ny-FJf" secondAttribute="height" id="GXm-6n-MBY"/>
                             <constraint firstItem="4w0-64-D11" firstAttribute="leading" secondItem="Ljc-bj-so9" secondAttribute="leading" id="HsU-lX-GDh"/>
                             <constraint firstItem="PnU-Cs-Ta7" firstAttribute="width" secondItem="BUH-sY-YMO" secondAttribute="width" multiplier="0.878505" id="Jqn-Az-KSw"/>
+                            <constraint firstItem="BHR-Ny-FJf" firstAttribute="top" secondItem="BUH-sY-YMO" secondAttribute="bottom" constant="20" id="MG7-74-JXI"/>
                             <constraint firstAttribute="trailing" secondItem="LKw-Eo-gXN" secondAttribute="trailing" id="b76-q3-5RG"/>
                             <constraint firstItem="yZF-QV-T4l" firstAttribute="top" secondItem="4w0-64-D11" secondAttribute="bottom" constant="20" id="bS4-K9-4AK"/>
+                            <constraint firstItem="BHR-Ny-FJf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="buY-vM-hs6"/>
                             <constraint firstItem="PnU-Cs-Ta7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bzZ-sL-g71"/>
                             <constraint firstItem="BUH-sY-YMO" firstAttribute="leading" secondItem="yZF-QV-T4l" secondAttribute="leading" id="hVg-Zr-CJP"/>
                             <constraint firstItem="PnU-Cs-Ta7" firstAttribute="leading" secondItem="BUH-sY-YMO" secondAttribute="trailing" constant="12" id="ht5-W7-tBC"/>
+                            <constraint firstItem="BUH-sY-YMO" firstAttribute="width" secondItem="BHR-Ny-FJf" secondAttribute="width" id="j7m-r5-T5K"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LKw-Eo-gXN" secondAttribute="bottom" constant="20" id="mh5-bV-yce"/>
                             <constraint firstItem="BUH-sY-YMO" firstAttribute="top" secondItem="PnU-Cs-Ta7" secondAttribute="top" id="mo7-Zg-HGZ"/>
                             <constraint firstItem="PnU-Cs-Ta7" firstAttribute="top" secondItem="yZF-QV-T4l" secondAttribute="bottom" constant="20" id="oyu-iP-QxH"/>
@@ -90,6 +101,7 @@
                         <outlet property="mixingDuration" destination="yZF-QV-T4l" id="VuQ-SO-Zzy"/>
                         <outlet property="pickerView" destination="LKw-Eo-gXN" id="R0g-Zw-E0g"/>
                         <outlet property="playButton" destination="PnU-Cs-Ta7" id="PCT-8c-qC7"/>
+                        <outlet property="stopPlayersButton" destination="BHR-Ny-FJf" id="yku-7N-jip"/>
                         <outletCollection property="trackLabel" destination="Ljc-bj-so9" collectionClass="NSMutableArray" id="TlH-eP-v6x"/>
                         <outletCollection property="trackLabel" destination="4w0-64-D11" collectionClass="NSMutableArray" id="MkE-ub-lMz"/>
                     </connections>

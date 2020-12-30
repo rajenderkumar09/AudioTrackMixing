@@ -1,12 +1,12 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "3bd073371ba5c90089412069821496fd"
-build_time: [1608738298, 839421000]
+build_time: [1609309095, 843747000]
 inputs:
   "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/AppDelegate.swift": [1607580154, 459690333]
   "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/Model/Track.swift": [1607434788, 246383667]
-  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/RootViewController.swift": [1608738264, 336243703]
-  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/AudioPlayer.swift": [1608738298, 772503823]
+  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/RootViewController.swift": [1609309015, 994943351]
+  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/AudioPlayer.swift": [1609309093, 918034904]
   "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/SceneDelegate.swift": [1607576956, 690319419]
-  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/Looper.swift": [1607448191, 287376523]
+  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/Looper.swift": [1609308434, 449935304]
   "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/AudioViewController.swift": [1608190653, 909465029]
-  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/CrossFadePlayer.swift": [1608737136, 900707674]
+  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/CrossFadePlayer.swift": [1609308628, 22001202]
