@@ -61,6 +61,9 @@ class AudioPlayer {
 		}
 	}
 
+	/**
+		Setup Audio engine and start palying audio tracks
+	*/
     func start() {
 		self.setupPlayer()
 		engine.attach(self.currentPlayer)
@@ -142,6 +145,7 @@ class AudioPlayer {
 	}
 
 	func cleanUpAndDetachPlayerNode() {
+		self.engine.detach(mixer);
 		if let player = self.previousPlayer {
 			player.stop()
 			self.engine.detach(player)
