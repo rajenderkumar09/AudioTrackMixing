@@ -172,6 +172,17 @@ class RootViewController: UIViewController {
 		Play button action
 	*/
 	@IBAction func playTracks(_ sender: UIButton) {
+		//Check if audio queue is already playing.
+		if self.looper != nil {
+			let alert = UIAlertController(title: "Warning!", message: "Audio Queue is already playing audio tracks", preferredStyle: .alert)
+			alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+			self.present(alert, animated: true, completion: nil)
+			return
+		}
+		//Stop other player if already playing
+		self.stopPlayersButton.sendActions(for: .touchUpInside)
+
+		//Setup and play looper audio queue
 		self.looper = Looper(queue: Array(tracks.prefix(4)), fadeDuration: Double(duration))
 		/*
 		let track = self.tracks[0]
@@ -196,9 +207,11 @@ class RootViewController: UIViewController {
 	@IBAction func stopAllPlayers(_ sender: UIButton) {
 		if let engine = self.audioEngine {
 			engine.stop()
+			self.audioEngine = nil
 		}
 		if let looper = self.looper {
 			looper.stop()
+			self.looper = nil
 		}
 	}
 
@@ -206,6 +219,16 @@ class RootViewController: UIViewController {
 		AudioEngineButton Action
 	*/
 	@IBAction func audioEngineAction(_ sender: UIButton) {
+		//Check if audio engine is already playing.
+		if self.audioEngine != nil {
+			let alert = UIAlertController(title: "Warning!", message: "Audio Engine is already playing audio tracks", preferredStyle: .alert)
+			alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+			self.present(alert, animated: true, completion: nil)
+			return
+		}
+		//Stop other player if already playing
+		self.stopPlayersButton.sendActions(for: .touchUpInside)
+
 		// Setup and start main player
 		let urls = self.tracks.prefix(4).map { (track) -> URL in
 			guard let path = Bundle.main.path(forResource: track.fileName, ofType: track.type), let trackURL:URL = URL(fileURLWithPath: path) as? URL else {

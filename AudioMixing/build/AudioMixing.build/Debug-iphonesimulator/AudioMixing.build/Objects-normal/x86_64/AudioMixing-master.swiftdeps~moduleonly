@@ -1,10 +1,10 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "3bd073371ba5c90089412069821496fd"
-build_time: [1609309139, 101563000]
+build_time: [1609840000, 506755000]
 inputs:
   "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/AppDelegate.swift": [1607580154, 459690333]
   "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/Model/Track.swift": [1607434788, 246383667]
-  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/RootViewController.swift": [1609309137, 899971586]
+  "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/RootViewController.swift": [1609840000, 458144648]
   "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/AudioPlayer.swift": [1609309093, 918034904]
   "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/SceneDelegate.swift": [1607576956, 690319419]
   "/Users/rajendersha/CODE/StigaSoft/Code/AudioTrackMixing/Development/Trunk/AudioMixing/AudioMixing/AudioMixing/Looper.swift": [1609308434, 449935304]
